@@ -1,0 +1,100 @@
+/*Скидання стилів*/
+@import url(reset.css);
+
+* {
+    color: grey;
+}
+
+header,
+footer {
+    color: green;
+}
+
+.wrapper main [class*="__block"] p {
+    color: orange;
+}
+
+.block {
+    margin: 20px 0 0;
+    border-bottom: 1px solid gray;
+}
+
+
+
+/*--- header ---*/
+#header [href*="__block"] {
+    color: brown;
+}
+
+#header p>b {
+    color: green;
+}
+
+
+/*--- introduction__block ---*/
+
+.introduction__block p.first-p {
+    color: green;
+}
+
+#introduction__block .second-p>span {
+    color: blueviolet;
+}
+
+#introduction__block .second-p~p {
+    color: black;
+}
+
+.introduction__block .list .item+li {
+    color: pink;
+}
+
+
+
+/*--- ancient-time ---*/
+main .ancient-time h2 {
+    color: red;
+}
+
+.ancient-time>p {
+    color: blue;
+}
+
+
+
+/*--- great-place ---*/
+.great-place h3 {
+    color: red;
+}
+
+.great-place ol>li {
+    color: greenyellow;
+}
+
+.great-place ol li span {
+    color: blueviolet;
+}
+
+
+/*--- records__block ---*/
+.records__block h4 {
+    color: red;
+}
+
+#records__block ul li * {
+    color: green;
+}
+
+
+/*--- soul__block ---*/
+.soul__block.block h5 {
+    color: aqua;
+}
+
+.soul__block p>span {
+    color: palevioletred;
+}
+
+#soul__block div~p {
+    color: blue;
+}
