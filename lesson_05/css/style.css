@@ -46,7 +46,7 @@ h2 {
 }
 
 .container {
-    padding: 30px 16px;
+    padding: 50px 16px;
 }
 
 
@@ -189,7 +189,7 @@ h2 {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 70px;
-    letter-spacing: 0.2;
+    letter-spacing: 0.2px;
 }
 
 #homework .container .title-block .color-text {
@@ -251,7 +251,7 @@ h2 {
     margin-top: 20px;
     font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0.2;
+    letter-spacing: 0.2px;
     color: #737373;
 }
 
@@ -299,7 +299,7 @@ h2 {
 
 #footer .container>a {
     display: block;
-    font-style: 28px;
+    font-size: 28px;
     line-height: 32px;
     font-weight: 600;
     color: rgb(171, 54, 54);
