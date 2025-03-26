@@ -37,9 +37,17 @@
 /* --- "Circular" --- */
 
 @font-face {
-  font-family: "Circular", sans-serif;
-  src: url("../fonts/circular-std-medium-500.woff2") format("woff2");
-  font-weight: 500;
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Book.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
