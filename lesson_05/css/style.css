@@ -1,0 +1,313 @@
+/* Підключення шрифтів */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url(fonts.css);
+
+/*Скидання стилів*/
+@import url(reset.css);
+
+
+body {
+    font-family: "Playfair Display", serif;
+    font-size: 24px;
+    line-height: 32px;
+    color: #808080;
+    box-sizing: content-box;
+}
+
+h1,
+h2 {
+    font-family: "NyghtSerif", sans-serif;
+}
+
+h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 58px;
+    color: blue;
+    text-shadow: 5px -3px 5px palevioletred, 2px -1px 0px rgb(42, 61, 165);
+    text-transform: uppercase;
+}
+
+h2 {
+    color: blue;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-decoration: underline;
+    text-decoration-color: palevioletred;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.container {
+    padding: 30px 16px;
+}
+
+
+
+/*--- header ---*/
+#header {
+    text-align: center;
+    font-weight: 600;
+}
+
+#header .container p {
+    text-transform: uppercase;
+    color: rgb(171, 54, 54);
+}
+
+#header .container .links {
+    line-height: 100px;
+}
+
+#header .container .links span {
+    vertical-align: bottom;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+#header .container .links span a {
+    color: rgb(171, 54, 54);
+    margin: 0 10%;
+    text-decoration: underline wavy pink;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+    font-style: italic;
+}
+
+
+
+/*--- famousWomen ---*/
+#famousWomen .container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#famousWomen .container h1 {
+    word-spacing: 20px;
+    text-align: center;
+}
+
+#famousWomen .container .block-items .item {
+    padding: 30px 60px;
+    text-align: end;
+    color: rgb(150, 150, 11);
+}
+
+#famousWomen .container .block-items .item h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#famousWomen .container .block-items .item>p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+#famousWomen .container .block-items .item p>a {
+    color: blue;
+    text-decoration: underline dashed pink;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+}
+
+#famousWomen .container .block-items .item_1 img {
+    min-width: 300px;
+}
+
+#famousWomen .container .block-items .item_2 img {
+    height: 410px;
+}
+
+#famousWomen .container .block-text {
+    background-color: rgb(225, 255, 249);
+    width: 100%;
+    max-height: 1000px;
+    overflow: auto;
+    padding: 50px 16px;
+}
+
+#famousWomen .container .block-text>p {
+    min-width: 393px;
+    max-width: 1000px;
+    text-align: start;
+    word-spacing: 10px;
+    line-height: 1.7;
+    color: blue;
+    padding: 0;
+    margin: 20px auto;
+}
+
+#famousWomen .container .block-text p+p {
+    color: palevioletred;
+    text-align: end;
+}
+
+#famousWomen .container .block-text p+p~p {
+    color: #808080;
+    text-align: start;
+}
+
+#famousWomen .container .block-text p+p~p+p {
+    color: rgb(150, 150, 11);
+    font-style: italic;
+    text-align: end;
+}
+
+#famousWomen .container .block-text p+p~p+p~p {
+    color: blue;
+    text-align: start;
+}
+
+
+
+/*--- Yevhen's Homework ---*/
+/* Властивість "background" нам дозволено використовувати в цій домашці, вона навіть в нотатках є + Експериментуємо!) */
+
+#homework {
+    max-width: 1920px;
+    font-family: "Montserrat", sans-serif;
+    overflow: hidden;
+    background: #231F8B;
+    margin: 0 auto;
+}
+
+#homework .container {
+    max-width: 1082px;
+    color: #ffffff;
+    padding: 151px 16px 100px;
+    margin: 0 auto;
+}
+
+#homework .container .title-block {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 70px;
+    letter-spacing: 0.2;
+}
+
+#homework .container .title-block .color-text {
+    color: #5A54F2;
+    font-weight: 700;
+}
+
+#homework .container .title-block h3 {
+    font-family: "Circular", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0;
+    text-transform: capitalize;
+    letter-spacing: normal;
+}
+
+#homework .container .title-block h3>span {
+    text-transform: none;
+}
+
+#homework .container .title-block h3+p {
+    font-family: "Circular", sans-serif;
+}
+
+
+#homework .container .cards-block {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+
+#homework .container .cards-block .card-item {
+    display: inline-block;
+    vertical-align: top;
+    background: #ffffff;
+    padding: 35px 40px;
+    text-align: start;
+    margin-right: 40px;
+}
+
+#homework .container .cards-block .card-item h4 {
+    color: #252B42;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+#homework .container .cards-block .card-item .red-line {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background: red;
+}
+
+#homework .container .cards-block .card-item p {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2;
+    color: #737373;
+}
+
+#homework .container .cards-block .card-item_1,
+#homework .container .cards-block .card-item_3 {
+    width: 230px;
+}
+
+#homework .container .cards-block .card-item_2,
+#homework .container .cards-block .card-item_4 {
+    width: 231px;
+    margin-top: 48px;
+}
+
+#homework .container .cards-block .card-item_3 {
+    background: #5A54F2;
+}
+
+#homework .container .cards-block .card-item_3 h4,
+#homework .container .cards-block .card-item_3 h4~p {
+    color: #ffffff;
+}
+
+#homework .container .cards-block .card-item_3 .red-line {
+    background: #ffffff;
+}
+
+#homework .container .cards-block .card-item_4 {
+    margin-right: 0;
+}
+
+
+/*--- footer ---*/
+#footer {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "NyghtSerif", sans-serif;
+}
+
+#footer .container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#footer .container>a {
+    display: block;
+    font-style: 28px;
+    line-height: 32px;
+    font-weight: 600;
+    color: rgb(171, 54, 54);
+    text-decoration: underline dotted pink;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 4px;
+    margin-top: 30px;
+}
+
+/* ============================================================================== */
+/* ВЕЛИЧЕЗНА ПОДЯКА ЗА НАСТІЛЬКИ ДОСКОНАЛУ І КРОПІТКУ ПЕРЕВІРКУ ДОМАШНЬОЇ РОБОТИ! */
+/* ============================================================================== */

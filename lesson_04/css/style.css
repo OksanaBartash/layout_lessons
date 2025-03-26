@@ -10,7 +10,6 @@ body {
     font-family: "Fira Sans", sans-serif;
     font-size: 20px;
     line-height: 26px;
-    background-color: blanchedalmond;
     color: #808080;
 }
 
@@ -65,14 +64,8 @@ h3~p span {
     text-underline-offset: 2px;
 }
 
-.container {
-    margin: 20px 16px;
-}
-
 .container>ul>li {
-    list-style: circle;
     word-spacing: 8px;
-    margin: 0 16px;
 }
 
 .container>ul>li>p>span {
@@ -95,10 +88,6 @@ h3~p span {
     font-weight: 600;
 }
 
-#header>ol>li {
-    list-style: inside;
-}
-
 
 /*--- into ---*/
 #into>p {
@@ -112,8 +101,6 @@ h3~p span {
 
 /*--- beer ---*/
 #beer ol>li {
-    list-style: auto;
-    margin: 0 0 0 16px;
     font-style: italic;
 }
 
@@ -157,8 +144,6 @@ h3~p span {
 #homework>ol>li {
     font-family: Comfortaa, sans-serif;
     font-size: 16px;
-    list-style: disc;
-    margin: 0 0 0 16px;
     font-style: italic;
 }
 
@@ -178,29 +163,21 @@ h3~p span {
 
 
 #homework .homework-task {
-    max-width: calc(871px + 48px);
     background-color: #fff;
     font-family: Poppins, sans-serif;
     font-weight: 400;
-    padding: 24px;
-    margin: 16px 0;
     font-size: 18px;
     line-height: 1.5;
 }
 
 #homework .homework-task .text-bold {
     font-weight: 500;
-    color: #1A1A1A;
+    color: #191919;
     font-size: 20px;
     line-height: 1.5;
 }
 
-#homework .homework-task p+p {
-    margin: 16px 0 24px;
-    color: #999999;
-}
-
-#homework .homework-task p+p+p {
+#homework .homework-task p>p {
     color: #808080;
 }
 
@@ -216,11 +193,6 @@ h3~p span {
 #conclusion p+p {
     font-size: 40px;
     color: brown;
-}
-
-#conclusion .image-block img {
-    max-width: 300px;
-    height: 250px;
 }
 
 

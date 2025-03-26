@@ -1,0 +1,45 @@
+/* --- "NyghtSerif" --- */
+
+@font-face {
+  font-family: "NyghtSerif";
+  src: url("../fonts/NyghtSerif-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  src: url("../fonts/NyghtSerif-RegularItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: "NyghtSerif";
+  src: url("../fonts/NyghtSerif-Medium.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "NyghtSerif";
+  src: url("../fonts/NyghtSerif-Bold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* --- "Circular" --- */
+
+@font-face {
+  font-family: "Circular", sans-serif;
+  src: url("../fonts/circular-std-medium-500.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
