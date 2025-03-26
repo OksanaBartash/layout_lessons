@@ -201,6 +201,7 @@ h2 {
     font-family: "Circular", sans-serif;
     font-size: 36px;
     font-weight: 700;
+    line-height: normal;
     margin: 10px 0;
     text-transform: capitalize;
     letter-spacing: normal;
