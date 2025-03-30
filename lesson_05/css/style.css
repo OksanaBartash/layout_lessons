@@ -9,7 +9,7 @@
 body {
     font-family: "Playfair Display", serif;
     font-size: 24px;
-    line-height: 32px;
+    line-height: 1.4;
     color: #808080;
     box-sizing: content-box;
 }
@@ -22,7 +22,7 @@ h2 {
 h1 {
     font-size: 52px;
     font-weight: 800;
-    line-height: 58px;
+    line-height: 1.2;
     color: blue;
     text-shadow: 5px -3px 5px palevioletred, 2px -1px 0px rgb(42, 61, 165);
     text-transform: uppercase;
@@ -45,9 +45,9 @@ h2 {
     overflow: hidden;
 }
 
-.container {
+/*.container {
     padding: 50px 16px;
-}
+}*/
 
 
 
@@ -55,6 +55,7 @@ h2 {
 #header {
     text-align: center;
     font-weight: 600;
+    padding: 50px 16px;
 }
 
 #header .container p {
@@ -62,19 +63,14 @@ h2 {
     color: rgb(171, 54, 54);
 }
 
-#header .container .links {
-    line-height: 100px;
-}
-
 #header .container .links span {
-    vertical-align: bottom;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.2;
 }
 
 #header .container .links span a {
     color: rgb(171, 54, 54);
-    margin: 0 10%;
+    margin: 20px 10% 0;
     text-decoration: underline wavy pink;
     text-decoration-thickness: 3px;
     text-underline-offset: 4px;
@@ -84,6 +80,10 @@ h2 {
 
 
 /*--- famousWomen ---*/
+#famousWomen {
+    padding: 50px 16px;
+}
+
 #famousWomen .container {
     width: 100%;
     margin: 0 auto;
@@ -175,7 +175,7 @@ h2 {
     font-family: "Montserrat", sans-serif;
     overflow: hidden;
     background: #231F8B;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 
 #homework .container {
@@ -187,7 +187,7 @@ h2 {
 
 #homework .container .title-block {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.7;
     margin-bottom: 70px;
     letter-spacing: 0.2px;
 }
@@ -195,6 +195,7 @@ h2 {
 #homework .container .title-block .color-text {
     color: #5A54F2;
     font-weight: 700;
+    margin: 0 0 10px 0;
 }
 
 #homework .container .title-block h3 {
@@ -202,7 +203,7 @@ h2 {
     font-size: 36px;
     font-weight: 700;
     line-height: normal;
-    margin: 10px 0;
+    margin: 0 0 10px 0;
     text-transform: capitalize;
     letter-spacing: normal;
 }
@@ -218,7 +219,7 @@ h2 {
 
 
 #homework .container .cards-block {
-    text-align: center;
+    text-align: start;
     margin: 0 auto;
     font-size: 0;
 }
@@ -233,12 +234,16 @@ h2 {
     margin-right: 40px;
 }
 
+#homework .container .cards-block .card-item img {
+    margin: 0 0 20px 0;
+}
+
 #homework .container .cards-block .card-item h4 {
     color: #252B42;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 0 0 20px 0;
 }
 
 #homework .container .cards-block .card-item .red-line {
@@ -246,12 +251,12 @@ h2 {
     width: 50px;
     height: 2px;
     background: red;
+    margin-bottom: 20px;
 }
 
 #homework .container .cards-block .card-item p {
-    margin-top: 20px;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.4;
     letter-spacing: 0.2px;
     color: #737373;
 }
@@ -285,6 +290,76 @@ h2 {
 }
 
 
+
+/*--- p.s._Anastasiia ---*/
+
+#ps_Anastasiia {
+    max-width: 1000px;
+    color: purple;
+    margin: 0 auto 60px;
+}
+
+#ps_Anastasiia .block {
+    padding: 50px 50px 20px;
+    text-align: justify;
+    margin-bottom: 60px;
+}
+
+
+#ps_Anastasiia .block > p{
+    margin-bottom: 30px;
+}
+
+#ps_Anastasiia .block-2 {
+    color: greenyellow;
+    text-align: center;
+    padding: 40px 70px;
+    margin-bottom: 60px;
+}
+
+#ps_Anastasiia .inline {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 45%;
+    padding: 16px;
+    text-align: right;
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+
+#ps_Anastasiia img.inline-block {
+    margin-right: 30px;
+    margin-bottom: 60px;
+}
+
+#ps_Anastasiia .text {
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+#ps_Anastasiia .section {
+    color: red;
+}
+
+#ps_Anastasiia .section .items {
+    display: inline-block;
+    font-size: 0;
+    padding: 20px;
+}
+
+#ps_Anastasiia .section .items .item {
+    display: inline-block;
+    vertical-align: top;
+    width: 19%;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-right: 1%;
+}
+#ps_Anastasiia .section .items .item .content {
+    padding: 10px;
+}
+
+
 /*--- footer ---*/
 #footer {
     width: 100%;
@@ -301,7 +376,7 @@ h2 {
 #footer .container>a {
     display: block;
     font-size: 28px;
-    line-height: 32px;
+    line-height: 1.2;
     font-weight: 600;
     color: rgb(171, 54, 54);
     text-decoration: underline dotted pink;
