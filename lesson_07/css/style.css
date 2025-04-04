@@ -1,0 +1,633 @@
+/* Підключення шрифтів */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url(fonts.css);
+
+/*Скидання стилів*/
+@import url(reset.css);
+
+
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #ffffff;
+    color: #808080;
+}
+
+h1,
+h2 {
+    font-family: "NyghtSerif", sans-serif;
+}
+
+h2 {
+    font-size: 44px;
+    line-height: 2;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: underline 2px solid #000000;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    background-color: #aeaeae;
+    color: #d45f11;
+}
+
+.page {
+    padding: 16px;
+}
+
+.page .container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.page .container>* {
+    margin-bottom: 100px;
+}
+
+.page .container h2 {
+    margin-bottom: 30px;
+}
+
+/*.page .container>*:last-child{
+    margin-bottom: 0;
+}*/
+
+
+
+/*--- header ---*/
+.header {
+    padding: 50px 16px;
+    margin-bottom: 20px;
+}
+
+.header .container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header .container ul li {
+    display: inline-block;
+}
+
+.header .container a {
+    color: black;
+    padding: 10px 15px;
+    border-radius: 15px;
+    letter-spacing: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    box-shadow: -3px 12px 20px 5px rgba(0, 0, 0, 0.3);
+    margin: 0 20px 20px 0;
+
+    transition: all 0.3s;
+    position: relative;
+    top: 0;
+}
+
+.header .container a:hover {
+    top: 3px;
+    background-color: #c1b9b9;
+    box-shadow: 0 0 10px 0 #d45f11;
+}
+
+
+/*--- block__title ---*/
+.block__title .container h1 {
+    font-size: 50px;
+    line-height: 2.5;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+
+
+/*--- block__hover ---*/
+#hover .container .items {
+    width: 100%;
+    color: #fff;
+    font-size: 0px;
+}
+
+#hover .container .items>* {
+    display: inline-block;
+    vertical-align: top;
+    width: 25%;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#hover .container .items .item>* {
+    margin-right: 20px;
+    transition: all 0.7s;
+}
+
+#hover .container .items .item>*:last-child {
+    margin-right: 0;
+}
+
+#hover .container .items .item>img {
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+    border-radius: 50%;
+    border: 2px double #d45f11;
+}
+
+#hover .container .items .item a {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+#hover .container .items .item_1 a:hover {
+    color: #d45f11;
+    text-decoration: underline;
+}
+
+
+#hover .container .items .item_2 img {
+    width: 98%;
+    opacity: 0.3;
+    padding: 3px 0;
+}
+
+#hover .container .items .item_2 a:hover:hover {
+    color: greenyellow;
+    text-decoration: underline;
+}
+
+#hover .container .items .item_2 a:hover+img {
+    width: 100%;
+    border-radius: 16px;
+    opacity: 1;
+    cursor: pointer;
+    padding: 0;
+}
+
+
+#hover .container .items .item_3:hover a {
+    color: blue;
+    text-decoration: underline;
+}
+
+#hover .container .items .item_3 img {
+    opacity: 0;
+}
+
+#hover .container .items .item_3:hover img {
+    opacity: 1;
+}
+
+
+#hover .container .items .item_4 a:hover {
+    color: palevioletred;
+    font-size: 23px;
+    margin-bottom: 21px;
+}
+
+#hover .container .items .item_4 p+p {
+    display: none;
+}
+
+#hover .container .items .item_4 a:hover+p+p {
+    display: block;
+    color: palevioletred;
+}
+
+#hover .container .items>*:last-child {
+    margin-bottom: 0;
+}
+
+
+/*--- block__active ---*/
+
+#active .container .items>* {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    padding: 20px;
+}
+
+#active .container .items a {
+    max-width: 40%;
+    color: #d45f11;
+    padding: 30px 50px;
+    background: linear-gradient(0deg, #d45f11 2%, #aeaea9 50%, #d45f11 100%);
+    border-radius: 50% 0% 50% 100% / 100% 0% 125% 0%;
+    letter-spacing: 5px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1;
+    box-shadow: -3px 12px 20px 5px #4545435b;
+    margin: 0 20px 20px 0;
+
+    transition: all 0.3s;
+    position: relative;
+    top: 0;
+}
+
+#active .container .items a:hover {
+    top: 3px;
+    background-color: #c1b9b9;
+    box-shadow: 0 0 10px 0 #d45f11;
+}
+
+#active .container .items p {
+    max-width: 60%;
+    font-size: 24px;
+    line-height: 1.3;
+}
+
+#active .container .items p span {
+    display: none;
+}
+
+#active .container .items a:active {
+    background: linear-gradient(0deg, #d45f11 2%, #f0f0bd 50%, #d45f11 100%);
+    padding: 26px 46px;
+    margin: 0 28px 28px 0;
+}
+
+#active .container .items p:active span {
+    color: #000000;
+    display: inline;
+}
+
+
+
+
+/*--- block__visited-focus-target ---*/
+
+#visitedFocusTarget .container .items a {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    color: #000000;
+    font-weight: 700;
+}
+
+#visitedFocusTarget .container .items p {
+    color: #fff;
+    line-height: 1.5;
+}
+
+#visitedFocusTarget .container .items a:focus {
+    color: blue;
+    text-decoration: underline;
+}
+
+#visitedFocusTarget .container .items a:hover {
+    color: #d45f11;
+}
+
+#visitedFocusTarget .container .items p:target {
+    color: purple;
+    font-weight: bold;
+}
+
+
+
+/*--- positions ---*/
+#positions .container .items {
+    border: 1px dotted grey;
+    padding: 16px;
+}
+
+#positions .container .items:has(p) {
+    opacity: 1;
+    background-color: #c3f0bd8f;
+    border-radius: 20px;
+}
+
+#positions .container .items>* {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+#positions .container .items>*:last-child {
+    margin-bottom: 0;
+}
+
+#positions .container .items>*:not(p) {
+    font-weight: 600;
+    color: #000000;
+}
+
+#positions .container .items p:first-of-type {
+    text-transform: uppercase;
+}
+
+#positions .container .items .item:last-of-type {
+    color: #ffffff;
+}
+
+#positions .container .items>*:nth-child(odd) {
+    font-size: 14px;
+}
+
+#positions .container .items>*:nth-child(even) {
+    font-style: italic;
+}
+
+#positions .container .items>*:nth-of-type(5n+ 1) {
+    color: brown;
+}
+
+
+/*--- block__before & after ---*/
+#beforeAfter .container {
+    max-width: 70%;
+    font-size: 30px;
+    line-height: 1.5;
+}
+
+#beforeAfter .container>*:not(:last-child) {
+    margin: 0 auto 40px;
+}
+
+#beforeAfter .container .text::before {
+    content: '\201C';
+    font-size: 60px;
+    line-height: 30px;
+    color: green;
+}
+
+#beforeAfter .container .text::after {
+    content: '\201D';
+    font-size: 60px;
+    line-height: 30px;
+    color: green;
+}
+
+#beforeAfter .container .list {
+    text-align: center;
+}
+
+#beforeAfter .container .list ul>*:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#beforeAfter .container .list ul li::before {
+    content: '\2713';
+    margin-right: 15px;
+    color: green;
+    font-weight: 900;
+}
+
+
+/*============== Yevhen's Homework ==============*/
+#homework {
+    max-width: 1728px;
+    margin: 0 auto;
+    font-family: "Inter", sans-serif;
+}
+
+
+/*--- block__professional-faculty ---*/
+#homework .block__professional-faculty {
+    background: #412672;
+    padding: 60px 16px 100px;
+}
+
+#homework .block__professional-faculty .hom-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#homework .block__professional-faculty .hom-container h3 {
+    font-size: 38px;
+    font-weight: 400;
+    line-height: 1;
+    color: #ffffff;
+    margin-bottom: 31px;
+}
+
+#homework .block__professional-faculty .hom-container h3>b {
+    font-weight: 700;
+}
+
+#homework .block__professional-faculty .hom-container .cards {
+    font-size: 0;
+}
+
+#homework .block__professional-faculty .hom-container .cards .item {
+    width: 33.3%;
+    min-height: 476px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#homework .block__professional-faculty .hom-container .cards .item .content {
+    padding: 20px;
+    background: #ffffff;
+    color: #4F4F4F;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: all 0.5s;
+}
+
+#homework .block__professional-faculty .hom-container .cards .item .content:active,
+#homework .block__professional-faculty .hom-container .cards .item .content:hover {
+    background: #FFBE48;
+    box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
+}
+
+#homework .block__professional-faculty .hom-container .cards .item:not(:last-child) .content {
+    margin-right: 20px;
+}
+
+#homework .block__professional-faculty .hom-container .cards .item .content img {
+    width: 100%;
+    max-height: 265px;
+    margin-bottom: 16px;
+}
+
+#homework .block__professional-faculty .hom-container .cards .item .content .text>*:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+#homework .block__professional-faculty .hom-container .cards .item .content .text h5 {
+    color: #000;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#homework .block__professional-faculty .hom-container .cards .item .content .text p {
+    min-height: 100px;
+}
+
+#homework .block__professional-faculty .hom-container .cards .item .content .text a {
+    color: #FE3F3F;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    transition: all 0.3s;
+}
+
+#homework .block__professional-faculty .hom-container .cards .item .content .text a:active,
+#homework .block__professional-faculty .hom-container .cards .item .content .text a:hover {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+
+/*--- block__block__faculty-NY ---*/
+
+#homework .block__faculty-NY {
+    background: #ffffff;
+    padding: 55px 16px 42px;
+}
+
+#homework .block__faculty-NY .hom-container {
+    max-width: 1372px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+#homework .block__faculty-NY .hom-container>* {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#homework .block__faculty-NY .hom-container .text-block .contein {
+    color: #412672;
+    font-size: 22px;
+    font-weight: 400;
+    margin-right: 90px;
+}
+
+#homework .block__faculty-NY .hom-container .text-block .contein :not(:last-child) {
+    margin-bottom: 20px;
+}
+
+#homework .block__faculty-NY .hom-container .text-block .contein h4 {
+    text-align: justify;
+    font-size: 34px;
+}
+
+#homework .block__faculty-NY .hom-container .text-block .contein h4 b {
+    font-weight: 700;
+}
+
+#homework .block__faculty-NY .hom-container .text-block .contein ul li::before {
+    content: url(../img/homework_icon.png);
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+#homework .block__faculty-NY .hom-container .image-block::after {
+    content: url(../img/homework_4.png);
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+
+
+/*--- game ---*/
+#game {
+    max-width: 1000px;
+    background-image: url(../img/game_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: blue;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 50px 32px 100px;
+    margin: 50px auto;
+}
+
+#game h2 {
+    color: #ffffff;
+    margin: 0 auto;
+    text-decoration: unset;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+#game .container .items {
+    padding: 0px 50px;
+    margin: 0 auto;
+}
+
+#game .container .items .item:nth-child(odd) {
+    width: 50%;
+    min-height: 30px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+#game .container .items .item:nth-child(even) {
+    width: 30px;
+    min-height: 100px;
+    background: #ffffff;
+    margin: 0 auto;
+}
+
+#game .container .items .item:nth-child(6n + 1) {
+    margin: 0 0 0 15px;
+}
+
+#game .container .items .item:nth-child(9) {
+    margin: 0 0 0 15px;
+}
+
+#game .container .items .item:nth-child(3),
+#game .container .items .item:nth-child(5),
+#game .container .items .item:nth-child(11) {
+    text-align: end;
+    margin: 0;
+    margin-left: calc(50% - 15px);
+}
+
+#game .container .items .item:nth-child(4) {
+    text-align: end;
+    margin: 0;
+    margin-left: calc(100% - 45px);
+}
+
+#game .container .items .item:nth-child(8) {
+    text-align: start;
+    margin: 0;
+    margin-left: 15px;
+}
+
+#game .container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0px 0px -35px 15px;
+}
+
+#game .container img:last-child {
+    margin: -51px 0px 0px 91%;
+}
+
+#game [class="item"] {
+    visibility: hidden;
+}
+
+#game .container .items:hover .item:first-child {
+    visibility: visible;
+}
+
+#game .container .items>.item:hover+.item,
+#game .container .items>.item:hover {
+    visibility: visible;
+}
+
+/* ============================================================================== */
+/* ВЕЛИЧЕЗНА ПОДЯКА ЗА НАСТІЛЬКИ ДОСКОНАЛУ І КРОПІТКУ ПЕРЕВІРКУ ДОМАШНЬОЇ РОБОТИ! */
+/* ============================================================================== */
