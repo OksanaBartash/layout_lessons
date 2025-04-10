@@ -1,0 +1,301 @@
+/* Підключення шрифтів */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Скидання стилів*/
+@import url(reset.css);
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #d45f11bf, #d45f11);
+    color: #000000;
+}
+
+.page {
+    padding: 16px;
+}
+
+.page .main-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.page .main-container>* {
+    margin-bottom: 100px;
+}
+
+.page .main-container .container h2 {
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+
+
+/*--- header ---*/
+.header {
+    padding-top: 10px;
+}
+
+.header .container {
+    max-width: 1440px;
+    background: #008793;
+    border-radius: 15% 0 15% 0 / 105% 0 105% 0;
+    border: 0.125rem solid rgba(190, 44, 44, 0.76);
+    box-shadow: -3px 12px 20px 5px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+.header .container ul {
+    max-width: 1100px;
+    padding: 30px 16px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.header .container ul li {
+    display: inline-block;
+}
+
+.header .container ul li:not(:last-child) {
+    margin: 0 20px 20px 0;
+}
+
+.header .container a,
+#footer .container a {
+    background-color: #d45f11;
+    padding: 8px 10px;
+    border-radius: 15px;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: capitalize;
+    box-shadow: -3px 12px 20px 5px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.3s;
+    position: relative;
+    top: 0;
+}
+
+.header .container a:hover,
+#footer .container a:hover {
+    top: 3px;
+    box-shadow: 0 0 10px 0 #d45f11;
+}
+
+
+/*--- title ---*/
+h1 {
+    font-size: 50px;
+    line-height: 1.7;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/*--- block__icons ---*/
+#icons .container>*:not(h2) {
+    max-width: 800px;
+}
+
+#icons .container>* {
+    margin: 0 auto 40px;
+}
+
+#icons .container div:last-child {
+    margin: 0 auto;
+}
+
+#icons ul {
+    margin: 0 -20px -20px 0;
+    font-size: 0;
+}
+
+#icons ul li {
+    padding: 0 20px 20px 0;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 16px;
+}
+
+#icons .list-white ul li,
+#icons .list-buttons ul li {
+    width: 25%;
+}
+
+#icons .list-black ul li {
+    width: 33.3%;
+}
+
+#icons ul li .card-img {
+    width: 100%;
+    padding: 20px;
+
+    border: 2px solid #008793;
+    border-radius: 50%;
+    box-shadow: -3px 12px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+#icons .list-buttons ul li .card-img {
+    width: unset;
+    padding: 10px;
+
+    border: 1px solid #3d3d3d;
+    background: #ffffff;
+    box-shadow: -3px 12px 20px 5px rgba(0, 0, 0, 0.3);
+}
+
+#icons .list-buttons ul li .card-img img {
+    width: 50px;
+    height: 50px;
+}
+
+#icons ul li .card-img:active,
+#icons ul li .card-img:hover {
+    opacity: 0.7;
+    box-shadow: -2px 10px 18px 3px rgba(0, 0, 0, 0.3);
+}
+
+#icons .list-informative ul li {
+    font-size: 20px;
+    display: block;
+}
+
+#icons .list-informative ul li a {
+    width: 40%;
+    text-align: start;
+}
+
+#icons .list-informative ul li a:active,
+#icons .list-informative ul li a:hover {
+    opacity: 0.7;
+    font-weight: 500;
+}
+
+#icons .list-informative ul li a img {
+    width: 40px;
+    height: 42px;
+    margin-right: 20px;
+}
+
+#icons .list-informative ul li a img:active,
+#icons .list-informative ul li a img:hover {
+    width: 38px;
+}
+
+#icons .list-informative ul li:nth-child(1) {
+    margin: 0 0 0 -7px;
+}
+
+#icons .decorate-style::before {
+    content: url(../img/icons/founder_quotes.svg);
+    margin-bottom: 10px;
+}
+
+#icons .buttons-informative>* {
+    margin-bottom: 30px;
+}
+
+#icons .buttons-informative a {
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    box-shadow: -3px 12px 20px 5px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.3s;
+    position: relative;
+    top: 0;
+}
+
+#icons .buttons-informative a:active,
+#icons .buttons-informative a:hover {
+    top: 3px;
+    box-shadow: 0 0 10px 0 #d45f11;
+}
+
+#icons .buttons-informative a:nth-child(1) {
+    margin-right: 30px;
+}
+
+#icons .buttons-informative a:nth-child(1)::after {
+    content: url(../img/icons/header_arrow.svg);
+    margin-left: 10px;
+}
+
+#icons .buttons-informative a:nth-child(2) {
+    margin: 2px 0 0 0;
+}
+
+#icons .buttons-informative a:nth-child(2)::after {
+    content: url(../img/icons/header_search.svg);
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+
+
+/*--- block__transparency ---*/
+.transparency .logo-block a {
+    margin-right: 50px;
+}
+
+.transparency .logo-block a:active,
+.transparency .logo-block a:hover {
+    opacity: 0.7;
+}
+
+/*--- block__raster ---*/
+#raster .container>*:not(h2) {
+    margin: 0 40px 40px 0;
+    border: 5px solid #ffffff;
+    border-radius: 18px;
+}
+
+#raster .container img:nth-child(3) {
+    border-radius: 27% 0;
+    display: block;
+}
+
+/*--- block__raster ---*/
+#design .container {
+    min-height: 500px;
+    background-image: url(../img/subscription_bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+}
+
+#design .container h2 {
+    color: #ffffff;
+    text-shadow: 5px 5px 5px #008793;
+}
+
+
+/*--- footer ---*/
+#footer .container {
+    padding: 30px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ========================================= */
