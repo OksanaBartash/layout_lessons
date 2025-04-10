@@ -17,6 +17,13 @@ h2 {
     font-style: italic;
     text-transform: capitalize;
 }
+h3 {
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-style: italic;
+}
 
 .wrapper {
     overflow: clip;
@@ -181,7 +188,7 @@ h1 {
 }
 
 #icons .list-informative ul li a {
-    width: 40%;
+    min-width: 40%;
     text-align: start;
 }
 
@@ -206,8 +213,9 @@ h1 {
     margin: 0 0 0 -7px;
 }
 
-#icons .decorate-style::before {
-    content: url(../img/icons/founder_quotes.svg);
+
+
+#icons .decorate-style img {
     margin-bottom: 10px;
 }
 
@@ -233,20 +241,20 @@ h1 {
     box-shadow: 0 0 10px 0 #d45f11;
 }
 
-#icons .buttons-informative a:nth-child(1) {
+#icons .buttons-informative a:nth-child(2) {
     margin-right: 30px;
 }
 
-#icons .buttons-informative a:nth-child(1)::after {
+#icons .buttons-informative a:nth-child(2)::after {
     content: url(../img/icons/header_arrow.svg);
     margin-left: 10px;
 }
 
-#icons .buttons-informative a:nth-child(2) {
+#icons .buttons-informative a:nth-child(3) {
     margin: 2px 0 0 0;
 }
 
-#icons .buttons-informative a:nth-child(2)::after {
+#icons .buttons-informative a:nth-child(3)::after {
     content: url(../img/icons/header_search.svg);
     margin-left: 10px;
     vertical-align: middle;
