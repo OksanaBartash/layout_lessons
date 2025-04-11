@@ -1,19 +1,14 @@
 /* Підключення шрифтів */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet');
 
 /*Скидання стилів*/
 @import url(reset.css);
 
 
 body {
-    font-family: "Playfair Display", serif;
+    font-family: "Inter", sans-serif;
     background-color: #ffffff;
     color: #808080;
-}
-
-h1,
-h2 {
-    font-family: "NyghtSerif", sans-serif;
 }
 
 h2 {
@@ -448,10 +443,13 @@ h1 {
     box-shadow: 0px 384px 108px 0px rgba(0, 0, 0, 0.00), 0px 246px 98px 0px rgba(0, 0, 0, 0.01), 0px 138px 83px 0px rgba(0, 0, 0, 0.05), 0px 62px 62px 0px rgba(0, 0, 0, 0.09), 0px 15px 34px 0px rgba(0, 0, 0, 0.10);
 }
 
+.professional .cards .item .content a:first-child {
+    margin-bottom: 16px;
+}
+
 .professional .cards .item .content a img {
     width: 100%;
     height: 265px;
-    margin-bottom: 16px;
 }
 
 .professional .cards .item .content a img:hover {
