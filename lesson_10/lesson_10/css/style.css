@@ -319,11 +319,9 @@ h2 {
     margin-top: 10px;
 }
 
-
 #sticky .sticky__item h3 {
     position: sticky;
     top: 0;
-
     padding: 16px;
     text-align: center;
     text-transform: uppercase;
@@ -345,8 +343,6 @@ h2 {
 #ecobazar {
     max-width: 1000px;
     margin: 150px auto;
-    /*position: relative;
-    z-index: 1;*/
 }
 
 #ecobazar .ecobazar__cards {
@@ -523,6 +519,7 @@ h2 {
 
 /* --- BLOCK - Ecobazar ---  */
 #business {
+    margin: 0 -16px;
     background: #5A54F2;
 
     position: relative;
@@ -733,9 +730,6 @@ h2 {
     border-radius: 50%;
     z-index: 0;
 }
-
-
-
 
 
 /* --- BLOCK - footer ---  */
