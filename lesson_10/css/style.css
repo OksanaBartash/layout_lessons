@@ -231,7 +231,7 @@ h2 {
 }
 
 .item__child-inside.petal:nth-of-type(3) {
-    top:32%;
+    top: 32%;
     left: 0;
 }
 
@@ -244,18 +244,22 @@ h2 {
     bottom: 0;
     left: 32%;
 }
+
 .item__child-inside.petal:nth-of-type(6) {
     top: 8%;
     left: 8%;
 }
+
 .item__child-inside.petal:nth-of-type(7) {
     top: 8%;
     right: 8%;
 }
+
 .item__child-inside.petal:nth-of-type(8) {
     bottom: 8%;
     left: 8%;
 }
+
 .item__child-inside.petal:nth-of-type(9) {
     bottom: 8%;
     right: 8%;
@@ -600,12 +604,76 @@ h2 {
     margin-bottom: 55px;
 }
 
-#business .business__box:nth-child(1) .image-block {
-    display: inline-block;
-    margin: -41px 70px 15px 0;
+#business .business__box:nth-child(2) {
+    text-align: end;
+}
 
+
+
+/* image-block */
+#business .business__box .business__block-image {
+    position: relative;
+    z-index: 5;
+}
+
+#business .business__box:nth-child(1) .business__block-image {
     position: relative;
     z-index: 1;
+    top: -41px;
+}
+
+#business .business__box:nth-child(2) .business__block-image {
+    margin: 0 0 0 70px;
+
+    position: relative;
+    z-index: 2;
+}
+
+#business .business__box:nth-child(1) .business__block-image::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -25%;
+    width: 65px;
+    height: 65px;
+    border: 5px solid #FFBA49;
+    border-radius: 50%;
+}
+
+#business .business__box:nth-child(2) .business__block-image::before {
+    content: '';
+    position: absolute;
+    top: -8%;
+    left: 22%;
+    width: 65px;
+    height: 65px;
+    border: 5px solid #FFBA49;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+#business .business__box:nth-child(2) .business__block-image::after {
+    content: '';
+    position: absolute;
+    top: -7%;
+    right: -28%;
+    width: 262px;
+    height: 262px;
+    border: 5px solid #FFBA49;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+#business .business__box:nth-child(1) .business__block-image::after {
+    content: '';
+    position: absolute;
+    bottom: -12%;
+    left: -21%;
+    width: 400px;
+    height: 400px;
+    border: 5px solid #FFBA49;
+    border-radius: 50%;
+    z-index: 0;
 }
 
 #business .image-block__container {
@@ -621,13 +689,28 @@ h2 {
     z-index: 1;
 }
 
-#business .text-block {
+
+
+/* text-block */
+#business .business__box:nth-child(1) .business__block-text {
     max-width: 600px;
     vertical-align: bottom;
-    padding-bottom: 65px;
+    margin: 15px 0 0 70px;
+    padding-bottom: 93px;
 }
 
-#business .title-block {
+#business .business__box:nth-child(2) .business__block-text {
+    max-width: 480px;
+    vertical-align: top;
+    text-align: start;
+    margin: 0 0 15px 0;
+}
+
+#business .business__box:nth-child(2) .text-block__container {
+    padding-top: 30px;
+}
+
+#business .text-block__title {
     font-family: "CircularStd-Book", sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -636,7 +719,6 @@ h2 {
 }
 
 #business .text-block__text {
-    max-width: 480px;
     margin-bottom: 39px;
 }
 
@@ -657,88 +739,15 @@ h2 {
     padding: 18px 26px;
 }
 
-#business .business__box:nth-child(2) {
-    text-align: end;
-}
-
-#business .business__box:nth-child(2) .text-block {
-    vertical-align: top;
-    text-align: start;
-    max-width: 500px;
-}
-
-#business .business__box:nth-child(2) .text-block__container {
-    padding-top: 30px;
-}
-
-#business .business__box:nth-child(2) .image-block {
-    margin: 0 0 0 70px;
-
-    position: relative;
-    z-index: 2;
-}
-
-#business .business__box .image-block {
-    position: relative;
-    z-index: 5;
-}
-
-#business .business__box:nth-child(1) .image-block::before {
-    content: '';
-    position: absolute;
-    top: 30%;
-    left: -25%;
-    width: 65px;
-    height: 65px;
-    border: 5px solid #FFBA49;
-    border-radius: 50%;
-}
-
-#business .business__box:nth-child(1) .image-block::after {
-    content: '';
-    position: absolute;
-    bottom: -12%;
-    left: -21%;
-    width: 400px;
-    height: 400px;
-    border: 5px solid #FFBA49;
-    border-radius: 50%;
-    z-index: 0;
-}
-
-
-#business .business__box:nth-child(2) .image-block::before {
-    content: '';
-    position: absolute;
-    top: -8%;
-    left: 22%;
-    width: 65px;
-    height: 65px;
-    border: 5px solid #FFBA49;
-    border-radius: 50%;
-    z-index: 3;
-}
-
-#business .business__box:nth-child(2) .image-block::after {
-    content: '';
-    position: absolute;
-    top: -7%;
-    right: -28%;
-    width: 262px;
-    height: 262px;
-    border: 5px solid #FFBA49;
-    border-radius: 50%;
-    z-index: 0;
-}
 
 
 /* --- BLOCK - footer ---  */
-#footer {
-    text-align: center;
+#footer .footer__container {
     margin: 0 auto;
     padding: 100px 0;
-    color: #ffffff;
     background: #231F8B;
+    text-align: center;
+    color: #ffffff;
 }
 
 #footer .footer__container a {
@@ -753,3 +762,5 @@ h2 {
     border: 2px solid #F35B09;
     padding: 18px 26px;
 }
+
+/* =========================================== */
