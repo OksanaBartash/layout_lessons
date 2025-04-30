@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Lesson_11</title>
+
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" id="header">
+			<div class="header__container">
+				<div class="menu">
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" class="menu__link">Transform</a>
+
+							<ul class="menu__sub-menu sub-menu">
+								<li class="sub-menu__item">
+									<a href="#transform" class="sub-menu__link">Translate</a>
+								</li>
+								<li class="sub-menu__item">
+									<a href="#transform" class="sub-menu__link">Scale</a>
+								</li>
+								<li class="sub-menu__item">
+									<a href="#transform" class="sub-menu__link">Rotate</a>
+								</li>
+								<li class="sub-menu__item">
+									<a href="#transform" class="sub-menu__link">Skew</a>
+								</li>
+								<li class="sub-menu__item">
+									<a href="#box-multiple" class="sub-menu__link">Matrix</a>
+								</li>
+								<li class="sub-menu__item">
+									<a href="#box-multiple" class="sub-menu__link">Perspective</a>
+								</li>
+							</ul>
+						</li>
+
+						<li class="menu__item">
+							<a href="#box-multiple" class="menu__link">Transform 2D </a>
+						</li>
+
+						<li class="menu__item">
+							<a href="#box-3d" class="menu__link">Transform 3D </a>
+						</li>
+
+						<li class="menu__item">
+							<a href="#car" class="menu__link menu__link--color">Dream car</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page__container">
+				<div class="page__block">
+					<div class="name-lesson">
+						<h1>Lesson #11 - Transformations</h1>
+					</div>
+				</div>
+
+				<!-- BLOCK - Transform -->
+				<div class="page__block transform" id="transform">
+					<div class="transform__container">
+						<!-- =========== -->
+						<div class="subtitle">
+							<h2>Transform</h2>
+						</div>
+
+						<div class="transform__elements">
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3> translateX(50%)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>translate(20px, -20px)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>scale(1.5)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>scale(2, 1)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>scale(-1, 1.2)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>scale(0.5, -0.5)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>rotate(90deg)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>rotate(-360deg)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>rotateY(120deg)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>skew(45deg)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>skew(60deg, -60deg)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="transform__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>skewX(-90deg)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- =========== -->
+						<div class="subtitle">
+							<h2>Multiple - 2D transformations + Transform-origin</h2>
+						</div>
+
+						<div class="transform__elements box-multiple" id="box-multiple">
+							<div class="box-multiple__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3> matrix <br> (-2, -1, 2, 2, -30, 50)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-multiple__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>translate(120px, 70px) scale(0.3) rotate(80deg) skew(35deg)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-multiple__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>rotate(-135deg) & transform-origin: bottom right</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- =========== -->
+						<div class="subtitle">
+							<h2>3D transformations</h2>
+						</div>
+
+						<div class="transform__elements box-3d" id="box-3d">
+							<div class="box-3d__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>perspective: 80px,<br> rotateY(-60deg) </h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-3d__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>perspective: 80px,<br> translate3d(0px, -30px, 50px) </h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-3d__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>perspective: 80px, <br> scale3d(2, 0.5, 2) </h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-3d__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>perspective: 80px,<br> rotate3D<br>(40, -10, 160, 140deg) </h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-3d__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>perspective: 80px, <br> translate3d(20px, 20px, 40px) <br> rotate3d(1, 1, 1,
+											20deg)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-3d__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>perspective: 80px,<br> translate3d(-10px, -20px, -40px) <br>scale3D(-0.5, 1,
+											2)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-3d__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>perspective: 80px,<br> preserve-3d <br>rotateX(45deg)</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content"></div>
+									</div>
+								</div>
+							</div>
+
+							<div class="box-3d__element item">
+								<div class="item__box">
+									<div class="item__name">
+										<h3>backface-visibility: hidden</h3>
+									</div>
+									<div class="item__body">
+										<div class="item__content back-item">
+											<img src="./img/back.png" alt="Back">
+										</div>
+										<div class="item__content front-item">
+											<img src="./img/front.png" alt="Front">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- ============= HOMEWORK - Dream car) ============= -->
+				<div class="page__block car" id="car">
+					<div class="car__container">
+						<div class="top"></div>
+						<div class="body">
+							<div class="door"></div>
+							<div class="window front"></div>
+							<div class="window rear"></div>
+							<div class="helm"></div>
+						</div>
+						<div class="wheel front"></div>
+						<div class="wheel rear"></div>
+						<div class="bumper front"></div>
+						<div class="bumper rear"></div>
+						<div class="headlight"></div>
+						<div class="taillight"></div>
+					</div>
+
+					<div class="road"></div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer" id="footer">
+			<div class="footer__container">
+				<a href="#header">Scroll up</a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

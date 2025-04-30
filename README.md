@@ -17,3 +17,5 @@ Lesson_08: https://oksanabartash.github.io/layout_lessons/lesson_08/
 Lesson_09: https://oksanabartash.github.io/layout_lessons/lesson_09/
 
 Lesson_10: https://oksanabartash.github.io/layout_lessons/lesson_10/
+
+Lesson_11: https://oksanabartash.github.io/layout_lessons/lesson_11/
