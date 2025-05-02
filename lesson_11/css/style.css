@@ -136,12 +136,14 @@ body {
 
 #transform .transform__elements {
     margin-top: 20px;
+    display: inline-block;
 }
 
 #transform .transform__elements>*:not(:last-child) {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
 
 #transform .item {
     display: inline-block;
@@ -257,6 +259,7 @@ body {
 #transform .box-3d .item {
     width: 270px;
     height: 250px;
+        perspective: 80px;
 }
 
 #transform .box-3d .item .item__body {
@@ -265,10 +268,6 @@ body {
 
 #transform .box-3d .item__name {
     margin-bottom: 50px;
-}
-
-#transform .box-3d .item__box {
-    perspective: 80px;
 }
 
 #transform .box-3d .item:nth-child(1):hover .item__body {

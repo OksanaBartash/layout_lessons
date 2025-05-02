@@ -26,10 +26,9 @@ h2 {
     font-weight: 700;
 }
 
-.page {
-    padding: 16px;
+[class*="__container"] {
+    padding: 0 16px;
 }
-
 
 /* ========================================= */
 
@@ -95,7 +94,7 @@ h2 {
 
 /* --- BLOCK - name-lesson__title ---  */
 .name-lesson__container {
-    max-width: 1000px;
+    max-width: 1032px;
     margin: 0 auto;
 }
 
@@ -135,7 +134,7 @@ h2 {
     padding-right: 20px;
 }
 
-#relative .item__container {
+#relative .item__body {
     height: 100%;
     border: 2px solid #858fa4;
 }
@@ -197,7 +196,7 @@ h2 {
 
 
 /* item_4 */
-#relative .item:nth-child(4) .item__container {
+#relative .item:nth-child(4) .item__body {
     position: relative;
 }
 
@@ -355,129 +354,173 @@ h2 {
     text-align: center;
 }
 
+#ecobazar .ecobazar__card-section {
+    vertical-align: top;
+    display: inline-block;
+}
+
+
+/* version #1 */
+#ecobazar .card-eco {
+    width: 254px;
+    display: inline-block;
+    margin-right: 40px;
+    border: 1px solid #2C742F;
+    background: #FFF;
+    text-align: start;
+    padding: 12px;
+
+    position: relative;
+}
+
+#ecobazar .card-eco__image {
+    max-width: 254px;
+    margin-bottom: 16px;
+}
+
+#ecobazar .card-eco__image img {
+    width: 100%;
+}
+
+#ecobazar .card-eco__info {
+    width: 80%;
+    /* width: calc(100% - (40px + 12px));*/
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#ecobazar .card-eco__title {
+    color: #2C742F;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+#ecobazar .card-eco__rating {
+    margin-top: 6px;
+}
+
+#ecobazar .card-eco__basket-button {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 12px;
+}
+
+#ecobazar .card-eco__buttons {
+    position: absolute;
+    top: 16px;
+    right: 11px;
+    width: 40px;
+}
+
+#ecobazar .card-eco__button {
+    display: inline-block;
+
+    overflow: hidden;
+    opacity: 0;
+}
+
+#ecobazar .card-eco__button:not(:last-child) {
+    margin-bottom: 4px;
+}
+
+
+
+#ecobazar .card-eco:hover,
+#ecobazar .card-eco:active {
+    box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+}
+
+#ecobazar .card-eco:hover .card-eco__button {
+    opacity: 1;
+    visibility: visible;
+}
+
+#ecobazar .card-eco .card-eco__basket-button img:hover {
+    content: url(../img/icon_wallet-green.svg);
+}
+
+#ecobazar .card-eco .card-eco__button:nth-child(1) img:hover {
+    content: url(../img/icon_heart-hover.svg);
+}
+
+#ecobazar .card-eco .card-eco__button:nth-child(2) img:hover {
+    content: url(../img/icon_eye-hover.svg);
+}
+
+
+
+
+/* version #2 */
 #ecobazar .card-product {
     width: 254px;
     display: inline-block;
     margin-right: 40px;
 }
 
-#ecobazar .card-product__container {
-    border: 1px solid var(--Branding-Success-Dark, #2C742F);
-    background: var(--Gray-Scale-White, #FFF);
+#ecobazar .card-product__body {
+    border: 1px solid #2C742F;
+    background: #FFF;
+
+    position: relative;
 }
 
-#ecobazar .card-product__container:hover,
-#ecobazar .card-product__container:active {
+#ecobazar .card-product__body:hover,
+#ecobazar .card-product__body:active {
     box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
 }
 
-#ecobazar .product-image {
-    padding: 5px;
-    position: relative;
-    z-index: 1;
-}
 
-
-/* version #1 */
-#ecobazar .card-product:nth-child(1) .product-image::before {
-    content: '';
-    background-image: url(../img/icon_heart.svg);
+#ecobazar .card-product .card-product__action-element {
+    position: absolute;
     width: 40px;
-    height: 40px;
-    right: 11px;
-    top: 11px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
-}
-
-#ecobazar .card-product:nth-child(1) .product-image:hover::before {
-    background-image: url(../img/icon_heart-hover.svg);
-}
-
-#ecobazar .card-product:nth-child(1) .product-image::after {
-    content: '';
-    background-image: url(../img/icon_eye.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 40px;
-    height: 40px;
-    right: 11px;
-    top: 57px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
-}
-
-#ecobazar .card-product:nth-child(1) .product-image:hover::after {
-    background-image: url(../img/icon_eye-hover.svg);
-}
-
-
-/* version #2 */
-#ecobazar .card-product:nth-child(2) .card-product__container {
-    position: relative;
-}
-
-#ecobazar .card-product:nth-child(2) .card-product__action-element {
-    position: absolute;
     right: 11px;
     top: 11px;
     z-index: 5;
     cursor: pointer;
 }
 
-#ecobazar .card-product:nth-child(2) .options-product__container>* {
+#ecobazar .card-product .card-product__action-element a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
 }
 
-#ecobazar .card-product:nth-child(2) .options-product__container>*:not(:last-child) {
+#ecobazar .card-product .card-product__action-element a:not(:last-child) {
     margin-bottom: 6px;
 }
 
-
-#ecobazar .card-product:nth-child(2) .options-product__wishlist:active {
-    content: url(../img/icon_heart-active.svg);
+#ecobazar .card-product .card-product__action-element a img {
+    width: 100%;
 }
 
-#ecobazar .card-product:nth-child(2) .options-product__wishlist:hover {
+#ecobazar .card-product__action-element:first-child img:hover {
     content: url(../img/icon_heart-hover.svg);
 }
 
-#ecobazar .card-product:nth-child(2) .options-product__quick-view:hover,
-#ecobazar .card-product:nth-child(2) .options-product__quick-view:active {
+#ecobazar .card-product__action-element:last-child img:hover {
     content: url(../img/icon_eye-hover.svg);
 }
 
+#ecobazar .card-product__image-element {
+    padding: 5px;
+    position: relative;
+    z-index: 1;
+}
 
 #ecobazar .info-card {
     padding: 12px;
 }
 
-#ecobazar .info-card__container {
+#ecobazar .info-card__box {
+    width: calc(100% - (40px + 12px));
     text-align: start;
-}
-
-
-/* version #1 */
-#ecobazar .card-product:nth-child(1) .info-card {
-    position: relative;
-}
-
-#ecobazar .card-product:nth-child(1) .info-card__container::after {
-    content: '';
-    background-image: url(../img/icon_wallet-green.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    top: 27px;
-    right: 12px;
-    width: 40px;
-    height: 40px;
-}
-
-#ecobazar .card-product:nth-child(1):hover .info-card__container::after {
-    background-image: url(../img/icon_wallet-hover.svg);
 }
 
 #ecobazar .info-card__title {
@@ -495,25 +538,23 @@ h2 {
     margin-bottom: 6px;
 }
 
-
-/* version #2 */
-#ecobazar .card-product:nth-child(2) .card-product__container {
+#ecobazar .card-product:nth-child(2) .card-product__body {
     position: relative;
 }
 
-#ecobazar .basket-image {
+#ecobazar .card-product__basket-element {
     position: absolute;
     bottom: 24px;
     right: 16px;
     z-index: 6;
 }
 
-#ecobazar .basket-image__container img {
+#ecobazar .card-product__basket-element img {
     border-radius: 50%;
     cursor: pointer;
 }
 
-#ecobazar .basket-image:hover img {
+#ecobazar .card-product__basket-element:hover img {
     content: url(../img/icon_wallet-hover.svg);
 }
 
@@ -521,11 +562,10 @@ h2 {
 
 
 
-/* --- BLOCK - Ecobazar ---  */
+/* --- BLOCK - Вusiness ---  */
 #business {
     margin: 0 -16px;
     background: #5A54F2;
-
     position: relative;
 }
 
@@ -565,13 +605,18 @@ h2 {
 #business .business__container::before {
     content: '';
     position: absolute;
-    top: 34%;
+    top: 33%;
     left: 0;
-    width: 214px;
-    height: 473px;
-    background-image: radial-gradient(#70C217 7px, transparent 4px);
+    width: 213px;
+    height: 472px;
+    background-image: radial-gradient(#70C217 7px, transparent 0px);
     background-size: 44px 44px;
     z-index: 0;
+}
+
+*::before,
+*::after {
+    display: inline-block;
 }
 
 #business .business__container::after {
@@ -623,8 +668,6 @@ h2 {
 }
 
 #business .business__box:nth-child(2) .business__block-image {
-    margin: 0 0 0 70px;
-
     position: relative;
     z-index: 2;
 }
@@ -676,11 +719,11 @@ h2 {
     z-index: 0;
 }
 
-#business .image-block__container {
+#business .image-block__box {
     max-width: 430px;
 }
 
-#business .image-block__container img {
+#business .image-block__box img {
     width: 100%;
     border-radius: 20px;
     box-shadow: -15px 30px 30px 0px rgb(54 52 59 / 40%);
@@ -703,10 +746,10 @@ h2 {
     max-width: 480px;
     vertical-align: top;
     text-align: start;
-    margin: 0 0 15px 0;
+    margin: 0 70px 15px 0;
 }
 
-#business .business__box:nth-child(2) .text-block__container {
+#business .business__box:nth-child(2) .text-block__body {
     padding-top: 30px;
 }
 
@@ -722,7 +765,7 @@ h2 {
     margin-bottom: 39px;
 }
 
-#business .button-block__container {
+#business .text-block__button {
     display: inline-block;
     font-family: "Roboto", sans-serif;
     font-size: 18px;
@@ -732,8 +775,8 @@ h2 {
     padding: 20px 26px;
 }
 
-#business .button-block__container:active,
-#business .button-block__container:hover {
+#business .text-block__button:active,
+#business .text-block__button:hover {
     background: unset;
     border: 2px solid #F35B09;
     padding: 18px 26px;
