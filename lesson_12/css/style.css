@@ -165,7 +165,7 @@ body {
 
 
 /* --- Button #2 --- */
-.buttons__text {
+.button__text {
     background: #ffffff;
     color: #000000;
     padding: 30px;
@@ -182,7 +182,7 @@ body {
     visibility: hidden;
 }
 
-.buttons__item:nth-child(2) a:hover .buttons__text {
+.buttons__item:nth-child(2) a:hover .button__text {
     opacity: 1;
     visibility: visible;
     width: 500px;
