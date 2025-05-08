@@ -30,8 +30,13 @@ body {
 /* ========================================= */
 
 .page {
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 50px 0;
 }
+
+
 
 /* ---- name-lesson ---- */
 .name-lesson h1 {
@@ -39,6 +44,13 @@ body {
     font-size: 48px;
     font-weight: 700;
 }
+
+
+
+
+
+
+
 
 /* ---- buttons ---- */
 .buttons__container {
@@ -53,10 +65,10 @@ body {
     transition-property: all;
     transition-duration: 0.5s;
     transition-delay: 0.3s;
+}
 
-    animation: move-in 0.5s ease-out forwards;
-    animation-delay: 0.2s;
-    transform: translateX(-200vw);
+.page:hover .buttons__container {
+    background: #66777d;
 }
 
 .buttons__item {
@@ -64,60 +76,6 @@ body {
     height: 100px;
     display: inline-block;
     margin: 0 0 70px 20px;
-
-    opacity: 0;
-    animation: move-in 1s ease-out forwards;
-}
-
-@keyframes move-in {
-    to {
-        transform: translateX(0) translateY(0);
-        opacity: 1;
-    }
-}
-
-
-.buttons__item:nth-child(1),
-.buttons__item:nth-child(5) {
-    animation-delay: 0.4s;
-    transform: translateX(-200vw);
-    /* прибігає зліва */
-}
-
-.buttons__item:nth-child(5) {
-    animation-delay: 0.8s;
-}
-
-.buttons__item:nth-child(2),
-.buttons__item:nth-child(6) {
-    animation-delay: 0.5s;
-    transform: translateX(-200vw);
-}
-
-.buttons__item:nth-child(6) {
-    animation-delay: 0.9s;
-}
-
-.buttons__item:nth-child(3),
-.buttons__item:nth-child(7) {
-    animation-delay: 0.7s;
-    transform: translateX(200vw);
-    /* прибігає справа */
-}
-
-.buttons__item:nth-child(7) {
-    animation-delay: 1.2s;
-}
-
-.buttons__item:nth-child(4),
-.buttons__item:nth-child(8) {
-    animation-delay: 0.5s;
-    transform: translateY(-200vh);
-    /* прибігає знизу */
-}
-
-.buttons__item:nth-child(8) {
-    animation-delay: 1s;
 }
 
 .buttons__item a {
@@ -141,8 +99,7 @@ body {
 }
 
 
-
-/* --- Button #1 --- */
+/* --- Button #1: duration + property --- */
 .buttons__item:nth-child(1) a {
     transition-duration: 0.3s;
     transition-property: all;
@@ -164,7 +121,8 @@ body {
 
 
 
-/* --- Button #2 --- */
+/* --- Button #2 - Поява тексту при наведенні: duration + property +delay --- */
+
 .buttons__text {
     background: #ffffff;
     color: #000000;
@@ -203,8 +161,7 @@ body {
 
 
 
-/* --- Button #3  --- */
-
+/* --- Button #3 - Збільшуємо кнопку на 20%: property + duration + timing-function + will-change --- */
 .buttons__item:nth-child(3) a {
     transition-property: transform, box-shadow, background;
     transition-duration: 0.3s;
@@ -220,7 +177,7 @@ body {
 
 
 
-/* --- Button #4  --- */
+/* --- Button #4 - Анімована пульсуюча кнопка:  duration + iteration-count --- */
 .buttons__item:nth-child(4) a {
     animation-name: translate3d-element;
     animation-duration: 3s;
@@ -242,8 +199,7 @@ body {
 }
 
 
-
-/* --- Button #5 --- */
+/* --- Button #5 - Анімована дригаюча кнопка -  --- */
 .buttons__item:nth-child(5) a {
     animation-name: rotate-element;
     animation-duration: 0.8s;
@@ -265,8 +221,7 @@ body {
 }
 
 
-
-/* --- Button #6 --- */
+/* --- Button #6 - Анімована дригаюча кнопка -  --- */
 .buttons__item:nth-child(6) a {
     animation-name: livelyBounce;
     animation-duration: 0.5s;
@@ -297,11 +252,12 @@ body {
 
 .buttons__item:nth-child(6) a:hover {
     background: #049cad;
+    /* Заливаємо фон при наведенні */
 }
 
 
 
-/* --- Button #7  --- */
+/* --- Button #7: "Sticky button" --- */
 .buttons__item:nth-child(7) a {
     position: relative;
     display: inline-block;
@@ -383,8 +339,7 @@ body {
 }
 
 
-
-/* --- Button #8 --- */
+/* --- Button #8: "Sticky button" --- */
 .buttons__item:nth-child(8) a {
     position: relative;
     display: inline-block;
@@ -439,7 +394,13 @@ body {
 
 
 
-/*  ============= HOMEWORK - Flying dream car) ============= */
+
+
+
+
+
+
+/*  ============= HOMEWORK - Dream car) ============= */
 
 #car {
     max-width: unset;
@@ -525,7 +486,6 @@ body {
         transform: translateX(-400%) translateY(-350px);
     }
 }
-
 #car-object:hover {
     animation-play-state: paused;
 }
@@ -650,6 +610,7 @@ body {
     }
 }
 
+
 .door::after {
     content: '';
     position: absolute;
@@ -660,6 +621,7 @@ body {
     right: 10px;
     border-radius: 3px;
 }
+
 
 .helm {
     position: absolute;
@@ -741,11 +703,11 @@ body {
     }
 
     40% {
-        transform: rotateZ(-300deg);
+        transform: rotateZ(-300deg); /* збільшення */
     }
 
     50% {
-        transform: rotateZ(-1200deg);
+        transform: rotateZ(-1200deg); /* різкий ривок */
     }
 
     60% {
@@ -812,7 +774,7 @@ body {
 .exhaust-smoke {
     position: absolute;
     bottom: 15px;
-    right: -20px;
+    right: -20px; /* трохи позаду вихлопної труби */
     width: 10px;
     height: 10px;
     background: rgba(200, 200, 200, 0.6);
@@ -832,21 +794,19 @@ body {
     z-index: 1;
     pointer-events: none;
 }
-
 .exhaust-smoke::before {
     content: '';
     width: 15px;
     height: 15px;
     bottom: 5px;
-    right: -10px;
+    right: -10px; /* трохи позаду вихлопної труби */
 }
-
 .exhaust-smoke::after {
     content: '';
     width: 25px;
     height: 25px;
     bottom: 25px;
-    right: -30px;
+    right: -30px; /* трохи позаду вихлопної труби */
 }
 
 @keyframes smoke {
@@ -854,17 +814,17 @@ body {
         transform: scale(0.5) translateX(0) translateY(0);
         opacity: 0.8;
     }
-
     50% {
         transform: scale(1.2) translateX(10px) translateY(-10px);
         opacity: 0.4;
     }
-
     100% {
         transform: scale(1.8) translateX(20px) translateY(-20px);
         opacity: 0;
     }
 }
+
+
 
 .headlight {
     position: absolute;
@@ -921,6 +881,13 @@ body {
 }
 
 /* ============================================ */
+
+
+
+
+
+
+
 
 /* --- footer --- */
 #footer .footer__container {
