@@ -190,6 +190,10 @@ body {
     line-height: 1.2;
 }
 
+.column__title strong {
+    display: inline-block;
+}
+
 .column__text {
     font-size: 22px;
     line-height: 1.2;
