@@ -133,7 +133,7 @@ body {
     color: burlywood;
 }
 
-.black-form__line:not(:first-child) .black-form__lable p {
+.black-form__line:not(:first-child) .black-form__lable span {
     flex-shrink: 0;
 }
 
@@ -272,6 +272,12 @@ body {
     background: burlywood;
     padding: 15px;
     border-radius: 10px;
+}
+
+.black-form__add-file:hover,
+.black-form__add-file:active {
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 11px 0px burlywood;
 }
 
 .black-form__add-file:focus-within {
@@ -463,7 +469,7 @@ body {
     gap: 8px;
 }
 
-.form__label p {
+.form__label span {
     color: #1A1A1A;
     font-size: 14px;
     line-height: 1.5;
@@ -586,11 +592,9 @@ body {
 
 
 
-.form__group:has(.form__textarea) {
-    margin-top: 20px;
-}
 
 .form__label-textarea {
+    display: inline-block;
     margin-bottom: 8px;
 }
 

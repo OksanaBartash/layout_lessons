@@ -40,7 +40,7 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with type="text"</p>
+								<span>Field with type="text"</span>
 								<input type="text" minlength="2" maxlength="15" tabindex="2" required autocomplete="on"
 									placeholder="Last name" name="form[]" class="black-form__input">
 							</label>
@@ -48,7 +48,7 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with type="email"</p>
+								<span>Field with type="email"</span>
 								<input disabled type="email" minlength="2" maxlength="15" tabindex="3" required
 									autocomplete="on" placeholder="Enter your Email" name="form[]"
 									class="black-form__input">
@@ -57,14 +57,13 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p></p>
 								<input type="hidden" name="form[]" class="black-form__input">
 							</label>
 						</div>
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with type="tel"</p>
+								<span>Field with type="tel"</span>
 								<input type="tel" tabindex="4" required autocomplete="on" placeholder="Enter your phone"
 									name="form[]" class="black-form__input">
 							</label>
@@ -72,7 +71,7 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with type="password"</p>
+								<span>Field with type="password"</span>
 								<input type="password" tabindex="5" required placeholder="Enter your password"
 									name="form[]" class="black-form__input">
 							</label>
@@ -80,7 +79,7 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with type="number"</p>
+								<span>Field with type="number"</span>
 								<input type="number" tabindex="6" required placeholder="Enter your full number of age"
 									name="form[]" class="black-form__input">
 							</label>
@@ -89,7 +88,7 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with type="color"</p>
+								<span>Field with type="color"</span>
 								<input type="color" tabindex="7" required placeholder="Enter your full number of age"
 									name="form[]" class="black-form__input">
 							</label>
@@ -97,7 +96,7 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with type="search"</p>
+								<span>Field with type="search"</span>
 								<input type="search" tabindex="8" required placeholder="Enter your request"
 									name="form[]" class="black-form__input">
 							</label>
@@ -105,7 +104,7 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with type="date"</p>
+								<span>Field with type="date"</span>
 								<input type="date" tabindex="9" required placeholder="" name="form[]"
 									class="black-form__input">
 							</label>
@@ -113,8 +112,8 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with type="range"</p>
-								<input type="range" value="80" tabindex="10" required placeholder="" name="form[]"
+								<span>Field with type="range"</span>
+								<input type="range" value="80" tabindex="10" name="form[]"
 									class="black-form__input">
 							</label>
 						</div>
@@ -168,22 +167,22 @@
 						<div class="black-form__line">
 							<!-- 1 варіант -->
 							<!--<label class="black-form__lable">
-								<p>Field with type="file"</p>
+								<span>Field with type="file"</span>
 								<input type="file" multiple accept=".jpg, .png, .svg" tabindex="17" name="form[]"
 									class="black-form__input">
 							</label>-->
 
 							<!-- 2 варіант -->
-							<button type="button" class="black-form__add-file">
+							<div class="black-form__add-file">
 								Додати файл ...
 								<input type="file" multiple accept=".jpg, .png, .svg" tabindex="17" name="form[]"
 									class="black-form__input">
-							</button>
+							</div>
 						</div>
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with tag="textarea"</p>
+								<span>Field with tag="textarea"</span>
 								<textarea name="form[textarea]" class="black-form__textarea" tabindex="18"></textarea>
 							</label>
 						</div>
@@ -191,7 +190,7 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with tag="select"</p>
+								<span>Field with tag="select"</span>
 								<select name="form[select]" tabindex="19">
 
 									<option value="1">Text 1</option>
@@ -203,7 +202,7 @@
 
 						<div class="black-form__line">
 							<label class="black-form__lable">
-								<p>Field with tag="select"</p>
+								<span>Field with tag="select"</span>
 								<select multiple name="form[select]" tabindex="20">
 
 									<option value="1">Text 1</option>
@@ -238,14 +237,14 @@
 					<form method="post" action="#" enctype="multipart/form-data" class="form" id="form">
 						<div class="form__row">
 							<div class="form__column">
-								<div class="form__subtitle section-title">
+								<div class="form__subtitle section-title section-title--margin">
 									<h2>Billing Information</h2>
 								</div>
 
 								<div class="form__group">
 									<div class="form__item">
 										<label class="form__label">
-											<p>First name</p>
+											<span>First name</span>
 											<input type="text" placeholder="Your first name" name="form[name]" required
 												autocomplete="on" tabindex="25" class="form__input">
 										</label>
@@ -253,7 +252,7 @@
 
 									<div class="form__item">
 										<label class="form__label">
-											<p>Last name</p>
+											<span>Last name</span>
 											<input type="text" placeholder="Your last name" name="form[lastName]"
 												required autocomplete="on" tabindex="26" class="form__input">
 										</label>
@@ -261,7 +260,7 @@
 
 									<div class="form__item">
 										<label class="form__label">
-											<p>Company Name <span>(optional)</span></p>
+											<span>Company Name <span>(optional)</span></span>
 											<input type="text" placeholder="Company name" name="form[company]"
 												autocomplete="on" tabindex="27" class="form__input">
 										</label>
@@ -272,7 +271,7 @@
 								<div class="form__group">
 									<div class="form__item">
 										<label class="form__label">
-											<p>Street Address</p>
+											<span>Street Address</span>
 											<input type="text" placeholder="Street Address" name="form[address]"
 												required autocomplete="on" tabindex="28" class="form__input">
 										</label>
@@ -283,7 +282,7 @@
 								<div class="form__group">
 									<div class="form__item">
 										<label class="form__label">
-											<p>Country / Region</p>
+											<span>Country / Region</span>
 											<select name="form[country]" tabindex="29" class="form__select">
 												<option value="1" selected>Select</option>
 												<option value="2">Country_1</option>
@@ -295,7 +294,7 @@
 
 									<div class="form__item">
 										<label class="form__label">
-											<p>States</p>
+											<span>States</span>
 											<select name="form[country]" tabindex="30" class="form__select">
 												<option value="1" selected>Selects</option>
 												<option value="2">States_1</option>
@@ -307,7 +306,7 @@
 
 									<div class="form__item">
 										<label class="form__label">
-											<p>Zip Code</p>
+											<span>Zip Code</span>
 											<input type="password" placeholder="Zip Code" name="form[password]" required
 												autocomplete="off" tabindex="31" class="form__input">
 										</label>
@@ -318,7 +317,7 @@
 								<div class="form__group">
 									<div class="form__item">
 										<label class="form__label">
-											<p>Email</p>
+											<span>Email</span>
 											<input type="email" placeholder="Email Address" name="form[email]" required
 												autocomplete="on" tabindex="32" class="form__input">
 										</label>
@@ -326,7 +325,7 @@
 
 									<div class="form__item">
 										<label class="form__label">
-											<p>Phone</p>
+											<span>Phone</span>
 											<input type="tel" placeholder="Phone number" name="form[phone]" required
 												autocomplete="on" tabindex="33" class="form__input">
 										</label>
@@ -345,14 +344,14 @@
 								</div>
 
 
-								<div class="form__subtitle section-title">
+								<div class="form__subtitle section-title section-title--margin">
 									<h2>Additional Info</h2>
 								</div>
 
 								<div class="form__group">
 									<div class="form__item">
 										<label class="form__textarea">
-											<p class="form__label-textarea">Order Notes (Optional)</p>
+											<span class="form__label-textarea">Order Notes (Optional)</span>
 											<textarea name="form[textarea]"
 												placeholder="Notes about your order, e.g. special notes for delivery"
 												tabindex="35" class="form__input-textarea"></textarea>
@@ -374,7 +373,7 @@
 												<img src="img/pepper-green.webp" alt="Green pepper">
 												<span class="summary__text">Green Capsicum</span>
 												<label class="summary__label">
-													<p>x</p>
+													<span>x</span>
 													<input type="number" name="form[number]" value="5" tabindex="36"
 														required class="summary__input">
 												</label>
@@ -385,7 +384,7 @@
 												<img src="img/pepper-red.webp" alt="Red pepper">
 												<span class="summary__text">Red Capsicum</span>
 												<label class="summary__label">
-													<p>x</p>
+													<span>x</span>
 													<input type="number" name="form[number]" tabindex="37" value="1"
 														required class="summary__input">
 												</label>
