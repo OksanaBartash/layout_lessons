@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Lesson_14</title>
+
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" id="header">
+			<div class="header__container">
+				<ul class="header__list">
+					<li><a href="#practise">Practical part</a></li>
+					<li><a href="#registration">Form from the "Ecobazar"</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page__block page__block--margin name-lesson ">
+				<div class="name-lesson__container">
+					<h1>Lesson #14: HTML Forms and form elements</h1>
+				</div>
+			</div>
+
+			<div class="page__block page__block--margin practise" id="practise">
+				<div class="practise__container">
+					<form method="post" action="#" enctype="multipart/form-data" class="black-form">
+						<div class="black-form__line">
+							<label for="name" class="black-form__lable"> Field with type="text" </label>
+							<input id="name" type="text" pattern="" minlength="2" maxlength="10" tabindex="1" required
+								autocomplete="on" placeholder="Name" name="form[]" class="black-form__input">
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with type="text"</p>
+								<input type="text" minlength="2" maxlength="15" tabindex="2" required autocomplete="on"
+									placeholder="Last name" name="form[]" class="black-form__input">
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with type="email"</p>
+								<input disabled type="email" minlength="2" maxlength="15" tabindex="3" required
+									autocomplete="on" placeholder="Enter your Email" name="form[]"
+									class="black-form__input">
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p></p>
+								<input type="hidden" name="form[]" class="black-form__input">
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with type="tel"</p>
+								<input type="tel" tabindex="4" required autocomplete="on" placeholder="Enter your phone"
+									name="form[]" class="black-form__input">
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with type="password"</p>
+								<input type="password" tabindex="5" required placeholder="Enter your password"
+									name="form[]" class="black-form__input">
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with type="number"</p>
+								<input type="number" tabindex="6" required placeholder="Enter your full number of age"
+									name="form[]" class="black-form__input">
+							</label>
+						</div>
+
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with type="color"</p>
+								<input type="color" tabindex="7" required placeholder="Enter your full number of age"
+									name="form[]" class="black-form__input">
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with type="search"</p>
+								<input type="search" tabindex="8" required placeholder="Enter your request"
+									name="form[]" class="black-form__input">
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with type="date"</p>
+								<input type="date" tabindex="9" required placeholder="" name="form[]"
+									class="black-form__input">
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with type="range"</p>
+								<input type="range" value="80" tabindex="10" required placeholder="" name="form[]"
+									class="black-form__input">
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="checkbox">
+								<input type="checkbox" checked value="checkbox" tabindex="11" name="form[]"
+									class="checkbox__input">
+								<span class="checkbox__lable">Field with type="checkbox"</span>
+							</label>
+						</div>
+						<div class="black-form__line black-form__line--margin">
+							<label class="checkbox">
+								<input type="checkbox" value="0" tabindex="12" name="form[something]"
+									class="checkbox__input">
+								<span class="checkbox__lable">Field with type="checkbox"</span>
+							</label>
+						</div>
+
+
+						<div class="black-form__line">
+							<label class="options">
+								<input type="radio" checked value="0" tabindex="13" name="form[group-1]"
+									class="options__input">
+								<span class="options__lable">Field with type="radio" name="group-1"</span>
+							</label>
+						</div>
+						<div class="black-form__line black-form__line--margin">
+							<label class="options">
+								<input type="radio" value="0" tabindex="14" name="form[group-1]" class="options__input">
+								<span class="options__lable">Field with type="radio" name="group-1"</span>
+							</label>
+						</div>
+
+
+						<div class="black-form__line">
+							<label class="options">
+								<input type="radio" value="0" tabindex="15" name="form[group-2]" class="options__input">
+								<span class="options__lable">Field with type="radio" name="group-2"</span>
+							</label>
+						</div>
+						<div class="black-form__line black-form__line--margin">
+							<label class="options">
+								<input type="radio" checked value="0" tabindex="16" name="form[group-2]"
+									class="options__input">
+								<span class="options__lable">Field with type="radio" name="group-2</span>
+							</label>
+						</div>
+
+						<!-- Якщо у <form> є <input> з type="file" обов"язково додати треба атрибут enctype="multipart/form-data" до форми -->
+						<div class="black-form__line">
+							<!-- 1 варіант -->
+							<!--<label class="black-form__lable">
+								<p>Field with type="file"</p>
+								<input type="file" multiple accept=".jpg, .png, .svg" tabindex="17" name="form[]"
+									class="black-form__input">
+							</label>-->
+
+							<!-- 2 варіант -->
+							<button type="button" class="black-form__add-file">
+								Додати файл ...
+								<input type="file" multiple accept=".jpg, .png, .svg" tabindex="17" name="form[]"
+									class="black-form__input">
+							</button>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with tag="textarea"</p>
+								<textarea name="form[textarea]" class="black-form__textarea" tabindex="18"></textarea>
+							</label>
+						</div>
+
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with tag="select"</p>
+								<select name="form[select]" tabindex="19">
+
+									<option value="1">Text 1</option>
+									<option value="2">Text 2</option>
+									<option value="3" selected>Text 3</option>
+								</select>
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<label class="black-form__lable">
+								<p>Field with tag="select"</p>
+								<select multiple name="form[select]" tabindex="20">
+
+									<option value="1">Text 1</option>
+									<option value="2">Text 2</option>
+									<option value="3" selected>Text 3</option>
+								</select>
+							</label>
+						</div>
+
+						<div class="black-form__line">
+							<button type="button" tabindex="21">Button</button>
+							<button type="submit" tabindex="22">Submit</button>
+							<button type="reset" tabindex="23">Reset</button>
+						</div>
+
+
+						<div class="black-form__line">
+							Switcher with type="checkbox"
+							<label tabindex="-1" class="switcher">
+								<input type="checkbox" tabindex="24">
+							</label>
+						</div>
+					</form>
+				</div>
+			</div>
+
+
+			<!-- ======= HOMEWORK from "Ecobazar" =======  -->
+			<div class="page__block page__block--margin registration" id="registration">
+				<div class="registration__container">
+
+					<form method="post" action="#" enctype="multipart/form-data" class="form" id="form">
+						<div class="form__row">
+							<div class="form__column">
+								<div class="form__subtitle section-title">
+									<h2>Billing Information</h2>
+								</div>
+
+								<div class="form__group">
+									<div class="form__item">
+										<label class="form__label">
+											<p>First name</p>
+											<input type="text" placeholder="Your first name" name="form[name]" required
+												autocomplete="on" tabindex="25" class="form__input">
+										</label>
+									</div>
+
+									<div class="form__item">
+										<label class="form__label">
+											<p>Last name</p>
+											<input type="text" placeholder="Your last name" name="form[lastName]"
+												required autocomplete="on" tabindex="26" class="form__input">
+										</label>
+									</div>
+
+									<div class="form__item">
+										<label class="form__label">
+											<p>Company Name <span>(optional)</span></p>
+											<input type="text" placeholder="Company name" name="form[company]"
+												autocomplete="on" tabindex="27" class="form__input">
+										</label>
+									</div>
+								</div>
+
+
+								<div class="form__group">
+									<div class="form__item">
+										<label class="form__label">
+											<p>Street Address</p>
+											<input type="text" placeholder="Street Address" name="form[address]"
+												required autocomplete="on" tabindex="28" class="form__input">
+										</label>
+									</div>
+								</div>
+
+
+								<div class="form__group">
+									<div class="form__item">
+										<label class="form__label">
+											<p>Country / Region</p>
+											<select name="form[country]" tabindex="29" class="form__select">
+												<option value="1" selected>Select</option>
+												<option value="2">Country_1</option>
+												<option value="3">Country_2</option>
+												<option value="4">Country_3</option>
+											</select>
+										</label>
+									</div>
+
+									<div class="form__item">
+										<label class="form__label">
+											<p>States</p>
+											<select name="form[country]" tabindex="30" class="form__select">
+												<option value="1" selected>Selects</option>
+												<option value="2">States_1</option>
+												<option value="3">States_2</option>
+												<option value="4">States_3</option>
+											</select>
+										</label>
+									</div>
+
+									<div class="form__item">
+										<label class="form__label">
+											<p>Zip Code</p>
+											<input type="password" placeholder="Zip Code" name="form[password]" required
+												autocomplete="off" tabindex="31" class="form__input">
+										</label>
+									</div>
+								</div>
+
+
+								<div class="form__group">
+									<div class="form__item">
+										<label class="form__label">
+											<p>Email</p>
+											<input type="email" placeholder="Email Address" name="form[email]" required
+												autocomplete="on" tabindex="32" class="form__input">
+										</label>
+									</div>
+
+									<div class="form__item">
+										<label class="form__label">
+											<p>Phone</p>
+											<input type="tel" placeholder="Phone number" name="form[phone]" required
+												autocomplete="on" tabindex="33" class="form__input">
+										</label>
+									</div>
+								</div>
+
+
+								<div class="form__group">
+									<div class="form__item">
+										<label class="form__checkbox">
+											<input type="checkbox" value="0" name="form[checkbox]" required
+												tabindex="34" class="form__input-checkbox">
+											<span class="form__label-checkbox">Ship to a different address</span>
+										</label>
+									</div>
+								</div>
+
+
+								<div class="form__subtitle section-title">
+									<h2>Additional Info</h2>
+								</div>
+
+								<div class="form__group">
+									<div class="form__item">
+										<label class="form__textarea">
+											<p class="form__label-textarea">Order Notes (Optional)</p>
+											<textarea name="form[textarea]"
+												placeholder="Notes about your order, e.g. special notes for delivery"
+												tabindex="35" class="form__input-textarea"></textarea>
+										</label>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="form__column">
+								<div class="order">
+									<div class="order__subtitle section-title">
+										<h2>Order Summery</h2>
+									</div>
+
+									<div class="summary">
+										<div class="summary__order-list">
+											<div class="summary__line">
+												<img src="img/pepper-green.webp" alt="Green pepper">
+												<span class="summary__text">Green Capsicum</span>
+												<label class="summary__label">
+													<p>x</p>
+													<input type="number" name="form[number]" value="5" tabindex="36"
+														required class="summary__input">
+												</label>
+												<span class="summary__sum">$70.00</span>
+											</div>
+
+											<div class="summary__line">
+												<img src="img/pepper-red.webp" alt="Red pepper">
+												<span class="summary__text">Red Capsicum</span>
+												<label class="summary__label">
+													<p>x</p>
+													<input type="number" name="form[number]" tabindex="37" value="1"
+														required class="summary__input">
+												</label>
+												<span class="summary__sum">$14.00</span>
+											</div>
+										</div>
+
+										<div class="summary__result-line">
+											<span class="summary__text">Subtotal:</span>
+											<span class="summary__sum">$84.00</span>
+										</div>
+
+										<div class="summary__result-line">
+											<span class="summary__text">Shipping:</span>
+											<span class="summary__sum">Free</span>
+										</div>
+
+										<div class="summary__result-line">
+											<span class="summary__text">Total:</span>
+											<span class="summary__sum">$84.00</span>
+										</div>
+									</div>
+
+
+									<div class="order__subtitle section-title">
+										<h2>Payment Method</h2>
+									</div>
+
+									<div class="order__payment-method">
+										<label class="order__radio">
+											<input type="radio" checked value="0" tabindex="38" name="form[orderRadio]"
+												class="order__input">
+											<span class="order__label">Cash on Delivery</span>
+										</label>
+
+										<label class="order__radio">
+											<input type="radio" value="0" tabindex="39" name="form[orderRadio]"
+												class="order__input">
+											<span class="order__label">Paypal</span>
+										</label>
+
+										<label class="order__radio">
+											<input type="radio" disabled value="0" tabindex="40" name="form[orderRadio]"
+												class="order__input">
+											<span class="order__label">Amazon Pay</span>
+										</label>
+									</div>
+
+									<button type="submit" class="order__button" tabindex="41">Place Order</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer" id="footer">
+			<div class="footer__container">
+				<a href="#header">Made by Bartash Ksenia - 05/2025</a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
