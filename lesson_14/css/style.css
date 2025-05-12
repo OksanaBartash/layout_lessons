@@ -654,8 +654,12 @@ body {
     height: 60px;
 }
 
-.summary__text {
+.summary__line a {
+    min-width: 60%;
     flex-grow: 1;
+}
+
+.summary__text {
     width: 100%;
     color: #1A1A1A;
 }
