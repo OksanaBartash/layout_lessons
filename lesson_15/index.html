@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Lesson_15</title>
+
+	<link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" id="header">
+			<div class="header__container">
+				<ul class="header__list">
+					<li><a href="#dog">Practise</a></li>
+					<li><a href="">Homework</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page__block name-lesson">
+				<div class="name-lesson__container">
+					<h1>Lesson #15: Adapting the interface</h1>
+				</div>
+			</div>
+
+			<div class="page__block dog" id="dog">
+				<div class="dog__container">
+					<h2 class="subtitle">Golden Labrador divided into age categories:</h2>
+					<div class="dog__items">
+						<div class="dog__item">
+							<div class="dog__img">
+								<img src="img/image_1.webp" alt="A small puppy sits on the floor.">
+							</div>
+							<p>
+								<strong>From birth to six months:</strong>
+								Meet the Golden Labrador puppy—a fluffy tornado of mischief and cuteness! At this age,
+								they're experts in chewing socks and napping on your lap. They're still learning the
+								ropes, often mistaking slippers for chew toys and puddles for swimming pools.
+							</p>
+						</div>
+
+						<div class="dog__item">
+							<div class="dog__img">
+								<img src="img/image_2.webp" alt="A small puppy sits on the floor.">
+							</div>
+							<p>
+								<strong>From six months to one year:</strong>
+								The adolescent Golden Labrador is like a teenager—full of boundless energy and
+								questionable decisions! They've outgrown some puppy habits but are still mastering
+								commands like "sit" and "stay." Beware of their newfound enthusiasm for digging and
+								chasing squirrels.
+							</p>
+						</div>
+
+						<div class="dog__item">
+							<div class="dog__img">
+								<img src="img/image_3.webp" alt="A small puppy sits on the floor.">
+							</div>
+							<p>
+								<strong>From one year to adulthood (around three years):</strong>
+								Now in their prime, the Golden Labrador is a social butterfly. They excel in games of
+								fetch and have a knack for stealing hearts with their soulful eyes. They may
+								occasionally pretend not to hear commands, especially when distracted by a tantalizing
+								smell or an intriguing mud puddle.
+							</p>
+						</div>
+
+						<div class="dog__item">
+							<div class="dog__img">
+								<img src="img/image_4.webp" alt="A small puppy sits on the floor.">
+							</div>
+							<p>
+								<strong>Adult Golden Labrador:</strong>
+								Ah, the mature Golden Labrador—a loyal companion and expert in stealing food when no
+								one's looking. They've perfected the art of giving guilt-inducing stares for extra
+								treats and have a knack for finding the coziest spots on the couch. They still have
+								bursts of puppy-like energy but also enjoy long naps and being the center of attention
+								at family gatherings.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="page__block picture" id="picture">
+				<div class="picture__container">
+					<h2 class="subtitle">Images made by "picture" tag</h2>
+					<div class="picture__content">
+						<picture>
+							<source srcset="img/image_1.webp" media="(max-width: 425px)" type="image/webp">
+							<source srcset="img/image_2.webp" media="(max-width: 768px)" type="image/webp">
+							<source srcset="img/image_3.webp" media="(max-width: 1024px)" type="image/webp">
+							<img src="img/image_4.webp" alt="Image Golden Labrador">
+						</picture>
+					</div>
+
+				</div>
+			</div>
+
+
+
+			<!-- ======= HOMEWORK from "Ecobazar" =======  -->
+			<div class="page__block ecobazar" id="ecobazar">
+				<!------- Section products------->
+				<div class="products">
+					<div class="products__container">
+						<div class="products__title">
+							<h3>Featured Products</h3>
+							<button class="view-all arrow-right" type="button">View All</button>
+						</div>
+
+						<div class="products__items">
+							<!-- item #1 -->
+							<div class="products__item">
+								<div class="action-block">
+									<div class="action-block__sales action-block__sales--active">
+										<p>Sale 50%</p>
+									</div>
+									<div class="action-block__buttons">
+										<button class="desired" type="button"></button>
+										<button class="review" type="button"></button>
+									</div>
+								</div>
+
+								<div class="image-block">
+									<img src="/img/products-item__1.jpg" alt="Green Apple">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__column">
+										<h3 class="name-product">Green Apple</h3>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+											<span class="price-product__old price-product__old--active">$20.99</span>
+										</div>
+										<div class="honors-product">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-grey.svg" alt="yellow grey">
+										</div>
+									</div>
+									<div class="info-block__column">
+										<button class="button-basket" type="button"></button>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #2 -->
+							<div class="products__item">
+								<div class="action-block">
+									<div class="action-block__sales action-block__sales--off">
+										<p>Sale 50%</p>
+									</div>
+									<div class="action-block__buttons">
+										<button class="desired" type="button"></button>
+										<button class="review" type="button"></button>
+									</div>
+								</div>
+
+								<div class="image-block">
+									<img src="/img/products-item__2.jpg" alt="Fresh Indian Malta">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__column">
+										<h3 class="name-product">Fresh Indian Malta</h3>
+										<div class="price-product">
+											<span class="price-product__current"> $20.00</span>
+											<span class="price-product__old price-product__old--off">$00.00</span>
+										</div>
+										<div class="honors-product">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-grey.svg" alt="yellow grey">
+										</div>
+									</div>
+									<div class="info-block__column">
+										<button class="button-basket" type="button"></button>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #3 -->
+							<div class="products__item">
+								<div class="action-block">
+									<div class="action-block__sales action-block__sales--off">
+										<p>Sale 50%</p>
+									</div>
+									<div class="action-block__buttons">
+										<button class="desired" type="button"></button>
+										<button class="review" type="button"></button>
+									</div>
+								</div>
+
+								<div class="image-block">
+									<img src="/img/products-item__3.jpg" alt="Chinese cabbage">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__column">
+										<h3 class="name-product">Chinese cabbage</h3>
+										<div class="price-product">
+											<span class="price-product__current"> $12.00</span>
+											<span class="price-product__old price-product__old--off">$00.00</span>
+										</div>
+										<div class="honors-product">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-grey.svg" alt="yellow grey">
+										</div>
+									</div>
+									<div class="info-block__column">
+										<button class="button-basket" type="button"></button>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #4 -->
+							<div class="products__item">
+								<div class="action-block">
+									<div class="action-block__sales action-block__sales--off">
+										<p>Sale 50%</p>
+									</div>
+									<div class="action-block__buttons">
+										<button class="desired" type="button"></button>
+										<button class="review" type="button"></button>
+									</div>
+								</div>
+
+								<div class="image-block">
+									<img src="/img/products-item__4.jpg" alt="Green Lettuce">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__column">
+										<h3 class="name-product">Green Lettuce</h3>
+										<div class="price-product">
+											<span class="price-product__current">$9.00</span>
+											<span class="price-product__old price-product__old--off">$00.00</span>
+										</div>
+										<div class="honors-product">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-grey.svg" alt="yellow grey">
+										</div>
+									</div>
+									<div class="info-block__column">
+										<button class="button-basket" type="button"></button>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #5 -->
+							<div class="products__item">
+								<div class="action-block">
+									<div class="action-block__sales action-block__sales--off">
+										<p>Sale 50%</p>
+									</div>
+									<div class="action-block__buttons">
+										<button class="desired" type="button"></button>
+										<button class="review" type="button"></button>
+									</div>
+								</div>
+
+								<div class="image-block">
+									<img src="/img/products-item__5.jpg" alt="Eggplant">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__column">
+										<h3 class="name-product">Eggplant</h3>
+										<div class="price-product">
+											<span class="price-product__current">$34.00</span>
+											<span class="price-product__old price-product__old--off">$00.00</span>
+										</div>
+										<div class="honors-product">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-yellow.svg" alt="yellow star">
+											<img src="/img/star-grey.svg" alt="yellow grey">
+										</div>
+									</div>
+									<div class="info-block__column">
+										<button class="button-basket" type="button"></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+
+				<!------- Section food ------->
+				<div class="food">
+					<div class="food__container">
+						<div class="food__title">
+							<h3>Latest News</h3>
+						</div>
+
+						<div class="food__cards">
+							<!-- Card #1 -->
+							<div class="food__card card">
+								<div class="card__image">
+									<img src="/img/food-img__1.jpg"
+										alt="Oranges on a blue table, creating a bright contrast.">
+								</div>
+
+								<div class="card__info">
+									<div class="card__icons">
+										<a href="#">Food</a>
+										<a href="#"><span>By</span>Admin</a>
+										<a href="#">65 Comments</a>
+									</div>
+									<div class="card__text">
+										<p>
+											Curabitur porttitor orci eget neque accumsan venenatis. Nunc fermentum.
+										</p>
+									</div>
+									<button class="card__button arrow-right" type="button">Read More</button>
+								</div>
+							</div>
+
+							<!-- Card #2 -->
+							<div class="food__card card">
+								<div class="card__image">
+									<img src="/img/food-img__2.jpg"
+										alt="Oranges on a blue table, creating a bright contrast.">
+								</div>
+
+								<div class="card__info">
+									<div class="card__icons">
+										<a href="#">Food</a>
+										<a href="#"><span>By</span>Admin</a>
+										<a href="#">65 Comments</a>
+									</div>
+									<div class="card__text">
+										<p>
+											Eget lobortis lorem lacinia. Vivamus pharetra semper.
+										</p>
+									</div>
+									<button class="card__button arrow-right" type="button">Read More</button>
+								</div>
+							</div>
+
+							<!-- Card #3 -->
+							<div class="food__card card">
+								<div class="card__image">
+									<img src="/img/food-img__3.jpg"
+										alt="Oranges on a blue table, creating a bright contrast.">
+								</div>
+
+								<div class="card__info">
+									<div class="card__icons">
+										<a href="#">Food</a>
+										<a href="#"><span>By</span>Admin</a>
+										<a href="#">65 Comments</a>
+									</div>
+									<div class="card__text">
+										<p>
+											Maecenas blandit risus elementum mauris malesuada.
+										</p>
+									</div>
+									<button class="card__button arrow-right" type="button">Read More</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</main>
+
+		<footer class="footer" id="footer">
+			<div class="footer__container">
+				<a href="#header">Made by Bartash Ksenia - 05/2025</a>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
