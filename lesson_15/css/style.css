@@ -291,6 +291,7 @@ button.view-all {
     position: relative;
     margin-right: 12px;
     transition: all 0.3s;
+    white-space: nowrap;
 }
 
 @media (min-width: 1024px) {
@@ -547,7 +548,7 @@ button.button-basket {
 }
 
 .card {
-    flex: 1 1 424px;
+    flex: 0 1 424px;
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -559,6 +560,7 @@ button.button-basket {
     height: 100%;
     object-fit: contain;
     aspect-ratio: 424/324;
+    border-radius: 8px 8px 0 0;
 }
 
 .card__info {
@@ -653,32 +655,6 @@ button.card__button {
     }
 }
 
-/* ============================================================= */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -687,7 +663,7 @@ button.card__button {
 /* ---- Section footer ---- */
 #footer {
     width: 100%;
-    padding: 16px;
+    padding: 16px 0;
     margin: 0 auto;
     font-size: 24px;
     font-weight: 600;
@@ -713,7 +689,7 @@ button.card__button {
     height: 65px;
     border-radius: 50%;
     padding: 10px;
-    margin-left: 20px;
+    margin-left: -70px;
     background-color: burlywood;
     animation: pulseButtonUp 1s infinite ease-in-out;
 }
@@ -731,6 +707,10 @@ button.card__button {
 }
 
 @media (min-width: 1024px) {
+    .footer__container a::after {
+        margin-left: 20px;
+    }
+
     .footer__container:hover a::after {
         background-color: #ff7207;
         transition: all 0.5s;
