@@ -589,7 +589,7 @@ button.button-basket {
 }
 
 
-.card__image-date {
+.card__date-image{
     position: absolute;
     left: 24px;
     bottom: 24px;
@@ -606,7 +606,7 @@ button.button-basket {
     text-transform: uppercase;
 }
 
-.card__image-date p:first-child {
+.card__date-image p:first-child {
     color: #1A1A1A;
     text-align: center;
     font-size: 20px;
