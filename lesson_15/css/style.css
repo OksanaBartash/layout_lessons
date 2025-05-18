@@ -546,6 +546,12 @@ button.button-basket {
     gap: 24px;
 }
 
+@media (max-width: 916.89px) {
+    .food__cards {
+        justify-content: center;
+    }
+}
+
 .card {
     flex: 0 1 424px;
     display: flex;
