@@ -260,7 +260,7 @@ button.arrow-right::after {
     transition: transform 0.3s;
 }
 
-@media (min-width: 1024px) {
+@media (any-hover: hover) {
     button.arrow-right:hover::after {
         transform: scale(1.2);
     }
@@ -294,14 +294,6 @@ button.view-all {
     white-space: nowrap;
 }
 
-@media (min-width: 1024px) {
-    button.view-all:hover {
-        text-shadow: 3px 0 3px #00b20652;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-    }
-}
-
 .products__items {
     display: flex;
     flex-wrap: wrap;
@@ -321,36 +313,6 @@ button.view-all {
     z-index: 1;
 
     transition: all 0.3s;
-}
-
-@media (min-width: 550px) {
-    .products__item {
-        width: 50%;
-    }
-}
-
-@media (min-width: 800px) {
-    .products__item {
-        width: 33.33%;
-    }
-}
-
-@media (min-width: 1024px) {
-    .products__item {
-        width: 25%;
-    }
-
-    .products__item:hover,
-    .products__item:active {
-        border: 1px solid #2C742F;
-        box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
-    }
-}
-
-@media (min-width: 1220px) {
-    .products__item {
-        width: 20%;
-    }
 }
 
 .action-block {
@@ -416,12 +378,6 @@ button.review {
     background-color: #ffffff;
 }
 
-@media (min-width: 1024px) {
-    .action-block__buttons button:hover {
-        background-color: #00B207;
-        border: 1px solid #000000;
-    }
-}
 
 .action-block__buttons button:active {
     background-color: #00B207;
@@ -440,13 +396,6 @@ button.review {
     object-position: center;
     aspect-ratio: 500/500;
     transition: transform 0.4s ease;
-}
-
-@media (min-width: 1024px) {
-    .products__item:has(.review:hover) .image-block img {
-        transform: scale(1.3);
-        z-index: 3;
-    }
 }
 
 .products__item:has(.review:active) .image-block img {
@@ -499,7 +448,6 @@ button.review {
     visibility: hidden;
 }
 
-
 .info-block__column button.button-basket {
     opacity: 1;
     visibility: visible;
@@ -508,13 +456,64 @@ button.review {
 button.button-basket {
     background: url(../img/button-basket__black.svg) no-repeat center;
     background-color: #F2F2F2F2;
+}
 
+.info-block__column button.button-basket:active {
+    background-color: #2C742F;
+}
+
+
+
+@media (min-width: 550px) {
+    .products__item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 800px) {
+    .products__item {
+        width: 33.33%;
+    }
 }
 
 @media (min-width: 1024px) {
+    .products__item {
+        width: 25%;
+    }
+}
+
+@media (min-width: 1220px) {
+    .products__item {
+        width: 20%;
+    }
+}
+
+
+@media (any-hover: hover) {
+    button.view-all:hover {
+        text-shadow: 3px 0 3px #00b20652;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .action-block__buttons button:hover {
+        background-color: #00B207;
+        border: 1px solid #000000;
+    }
+
+    .products__item:hover {
+        border: 1px solid #2C742F;
+        box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+    }
+
     .products__item:hover button.button-basket {
         background: url(../img/button-basket.svg) no-repeat center;
         background-color: #00B207;
+    }
+
+    .products__item:has(.review:hover) .image-block img {
+        transform: scale(1.3);
+        z-index: 3;
     }
 
     .info-block__column button.button-basket:hover {
@@ -522,9 +521,21 @@ button.button-basket {
     }
 }
 
-.info-block__column button.button-basket:active {
-    background-color: #2C742F;
+
+@media (any-hover: none) {
+
+    .info-block__column button,
+    .action-block__buttons button {
+        opacity: 1;
+        visibility: visible;
+    }
 }
+
+
+
+
+
+
 
 
 
@@ -544,12 +555,6 @@ button.button-basket {
     align-items: stretch;
     height: 100%;
     gap: 24px;
-}
-
-@media (max-width: 916.89px) {
-    .food__cards {
-        justify-content: center;
-    }
 }
 
 .card {
@@ -589,7 +594,7 @@ button.button-basket {
 }
 
 
-.card__date-image{
+.card__date-image {
     position: absolute;
     left: 24px;
     bottom: 24px;
@@ -684,10 +689,17 @@ button.card__button {
     line-height: 1.2;
 }
 
-@media (min-width: 1024px) {
 
-    .card:hover,
-    .card:active {
+
+@media (max-width: 916.89px) {
+    .food__cards {
+        justify-content: center;
+    }
+}
+
+
+@media (any-hover: hover) {
+    .card:hover {
         cursor: pointer;
         border: 1px solid #2C742F;
         box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
@@ -769,7 +781,9 @@ button.card__button {
     .footer__container a::after {
         margin-left: 20px;
     }
+}
 
+@media (any-hover: hover) {
     .footer__container:hover a::after {
         background-color: #ff7207;
         transition: all 0.5s;
