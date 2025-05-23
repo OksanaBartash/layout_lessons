@@ -247,25 +247,40 @@ h3 {
     line-height: 1.2;
 }
 
+button.arrow-right {
+    position: relative;
+}
+
 button.arrow-right::after {
     content: '';
-    background: url(../img/arrow-right.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
+    background: url(../img/arrow-right.svg) center center / contain no-repeat;
     width: 15px;
     height: 12px;
-    top: 0;
-    left: 12px;
-    position: relative;
-    transition: transform 0.3s;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
 }
 
 @media (any-hover: hover) {
     button.arrow-right:hover::after {
-        transform: scale(1.2);
+        animation: shake 0.8s ease-in-out infinite;
     }
 }
 
+@keyframes shake {
+    25% {
+        transform: translateY(-50%) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-50%) translateX(-5px);
+    }
+
+    75% {
+        transform: translateY(-50%) translateX(5px);
+    }
+}
 
 
 
@@ -289,7 +304,7 @@ button.view-all {
     font-weight: 500;
     line-height: 1.5;
     position: relative;
-    margin-right: 12px;
+    padding: 0 24px;
     transition: all 0.3s;
     white-space: nowrap;
 }
@@ -321,6 +336,7 @@ button.view-all {
     display: flex;
     justify-content: space-between;
     align-items: start;
+    gap: 30px;
     position: absolute;
     top: 16px;
     left: 16px;
@@ -510,7 +526,6 @@ button.button-basket {
 
 @media (any-hover: hover) {
     button.view-all:hover {
-        text-shadow: 3px 0 3px #00b20652;
         text-decoration: underline;
         text-underline-offset: 3px;
     }
@@ -531,8 +546,8 @@ button.button-basket {
         background-color: #00B207;
     }
 
-    .products__item:has(.review:hover) .image-block img {
-        transform: scale(1.3);
+    .products__item:hover .image-block img {
+        transform: scale(1.05);
         z-index: 3;
     }
 
@@ -578,7 +593,8 @@ button.button-basket {
 }
 
 .card {
-    flex: 0 1 424px;
+    flex: 0 1 calc(100% / 3 - ((24px * (3 - 1)) / 3));
+    /* 3 колонки */
     display: flex;
     flex-direction: column;
     border-radius: 8px;
@@ -708,6 +724,8 @@ button.card__button {
     font-size: 16px;
     font-weight: 600;
     line-height: 1.2;
+    padding-right: 22px;
+    transition: all 0.3s;
 }
 
 
@@ -718,6 +736,19 @@ button.card__button {
     }
 }
 
+@media (max-width: 767.89px) {
+    .card {
+        flex: 0 1 calc(100% / 2 - ((24px * (2 - 1)) / 2));
+        /* 2 колонки */
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        flex: 0 1 100%;
+        /* 1 колонкa */
+    }
+}
 
 @media (any-hover: hover) {
     .card:hover {
@@ -741,7 +772,6 @@ button.card__button {
     }
 
     button.card__button:hover {
-        text-shadow: 3px 0 3px #00b20652;
         text-decoration: underline;
         text-underline-offset: 3px;
     }
