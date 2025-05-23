@@ -37,6 +37,7 @@ body {
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 100;
 }
 
 .business-header {
@@ -55,12 +56,14 @@ body {
     gap: 15px;
     padding-top: 27px;
     padding-bottom: 25px;
+    position: relative;
 }
 
 .logo-block {
     flex-shrink: 0;
     display: flex;
     align-items: center;
+    z-index: 5;
 }
 
 .logo-block__icon {
@@ -74,12 +77,13 @@ body {
 }
 
 .business-header__list {
-    flex-grow: 1;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
     font-size: 13px;
+    z-index: 3;
 }
 
 .business-header__link {
@@ -101,8 +105,7 @@ body {
     display: flex;
 }
 
-.business-header__button,
-.business-header__button-in-menu {
+.business-header__button {
     flex-shrink: 0;
     align-items: center;
     gap: 8px;
@@ -113,11 +116,11 @@ body {
     color: #ffffff;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     position: relative;
+    z-index: 5;
     overflow: hidden;
 }
 
-.business-header__button::before,
-.business-header__button-in-menu::before {
+.business-header__button::before {
     content: '';
     position: absolute;
     top: -35%;
@@ -129,8 +132,7 @@ body {
     background: linear-gradient(90deg, #00000000, #ffffff61);
 }
 
-.business-header__button::after,
-.business-header__button-in-menu::after {
+.business-header__button::after {
     content: '';
     background: url(../img/icons/business__icon-right-arrow.svg) 0 0 no-repeat;
     background-size: cover;
@@ -142,9 +144,6 @@ body {
     display: none;
 }
 
-.business-header__button-in-menu {
-    display: none;
-}
 
 
 
@@ -158,8 +157,7 @@ body {
         width: 100%;
     }
 
-    .business-header__button:hover::before,
-    .business-header__button-in-menu:hover::before {
+    .business-header__button:hover::before {
         translate: 500%;
         transition: translate 1s;
     }
@@ -197,6 +195,7 @@ body {
         width: 30px;
         height: 18px;
         position: relative;
+        z-index: 5;
     }
 
     .business-header__menu-icon span,
@@ -212,7 +211,6 @@ body {
     }
 
     .business-header__menu-icon span {
-        background: #F26522;
         top: 50%;
         transform: translateY(-50%);
     }
@@ -239,46 +237,53 @@ body {
         transform: rotate(45deg) translateY(2px);
     }
 
-    .business-header__menu {
-        position: relative;
-    }
-
-    .business-header__list {
+    .business-header__menu-body {
         position: fixed;
-        width: 100%;
-        height: auto;
 
+        overflow: auto;
+        /*Скрол при умові фіксованої висоти*/
+        width: 100%;
+        height: calc(100vh - 83px);
+        top: 83px;
+        left: -100%;
+
+        flex-direction: column;
         display: flex;
         justify-content: start;
         align-items: start;
-        flex-direction: column;
         gap: 20px;
-        left: -100%;
-        top: 100%;
-        background: #fbe3cd;
-        font-size: 24px;
-        padding: 15px;
 
-        opacity: 0;
-        visibility: hidden;
+        background: #fbe3cda2;
+        padding: 30px 15px;
 
         transition: all 0.5s;
     }
 
-    .menu-open-2 .business-header__list {
-        opacity: 1;
-        visibility: visible;
+    .menu-open-2 .business-header__menu-body {
         left: 0;
     }
+
+    body.menu-open-2 {
+        overflow: hidden; /* Прибираю скрол з body при відкритому меню */
+    }
+
+    .business-header__list {
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: start;
+        align-items: stretch;
+        font-size: 20px;
+    }
+
 }
 
 @media (max-width: 425px) {
-    .business-header__button {
+    .logo-block__text {
         display: none;
     }
 
-    .business-header__button-in-menu {
-        display: flex;
+    .business-header__button {
+        margin-right: calc(((100% - (15px * 2 + 30px + 36px + 100px))) / 4);
     }
 }
 
@@ -303,13 +308,20 @@ body {
 }
 
 @media (max-width: 425px) {
+    .intro {
+        min-height: calc(100vh - 120px);
+    }
+
     .intro__container {
         margin-top: -82px;
     }
 }
 
-
-
+@media (max-width: 383px) {
+    .intro {
+        min-height: calc(100vh - 136px);
+    }
+}
 
 /* -- footer -- */
 #footer {
@@ -329,7 +341,7 @@ body {
 
 .footer__link {
     position: relative;
-        transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .footer__link::after {
@@ -347,6 +359,7 @@ body {
     .footer__link:hover {
         color: #fff;
     }
+
     .footer__link:hover::after {
         width: 100%;
     }
