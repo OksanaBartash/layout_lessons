@@ -1,0 +1,1115 @@
+/*Скидання стилів*/
+@import url(reset.css);
+
+/* Підключення шрифтів */
+@import url('https://fonts.googleapis.com/css2?family=Carme&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+@font-face {
+    font-family: "KoPubBatang";
+    src: url("../fonts/KoPubBatang-Regular.woff2") format("woff2");
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+}
+
+.wrapper {
+    overflow: clip;
+    min-height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper>main {
+    flex-grow: 1;
+}
+
+[class*=__container] {
+    max-width: 1350px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+[class*="--margin"] {
+    margin-bottom: 80px;
+}
+
+@media (max-width: 425px) {
+    [class*="--margin"] {
+        margin-bottom: 40px;
+    }
+}
+
+/* ========================================= */
+
+#header,
+#footer {
+    padding: 32px 0;
+    background: #128cd0;
+    color: #ffffff;
+}
+
+#header .header__list,
+#footer .footer__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+}
+
+@media (any-hover: hover),
+(pointer: fine) {
+
+    #header .header__list a:hover,
+    #footer .footer__container:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    @media (max-width: 425px) {
+        #header {
+            font-size: 12px;
+        }
+    }
+}
+
+
+/* ---- name-lesson ---- */
+.name-lesson {
+    margin-top: 30px;
+    font-size: 44px;
+}
+
+.subtitile {
+    margin-bottom: 20px;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+/* ---- example-1 ---- */
+.practise__contain {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.example-1 .grid-box {
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    justify-content: center;
+    text-align: center;
+}
+
+.example-1 .grid-item {
+    background-color: #128cd0;
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+
+
+/* ---- example-2 ---- */
+.example-2 .grid-block {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 30px 1fr;
+}
+
+.example-2 .grid-block::before {
+    content: '';
+    background: url(../img/icons/icon-arrow.png) 0 0 / 100% no-repeat;
+
+    aspect-ratio: 1/1;
+    align-self: start;
+}
+
+.example-2 .grid-block:last-child {
+    margin-top: 30px;
+    display: inline-grid;
+    align-items: center;
+}
+
+
+
+
+
+
+/* ---- example-3 ---- */
+
+/*.example-3 .grid-block {
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: 200px 1fr;
+}
+
+.example-3 .grid-block img {
+    max-width: 100%;
+}*/
+
+
+/*якщо зображення не буде - #1 */
+/*.example-3 .grid-block {
+    display: grid;
+    gap: 10px 20px;
+    grid-template-columns: auto 1fr; 
+}
+
+.example-3 .grid-block img {
+    max-width: 100%;
+    width: 200px;
+}*/
+
+
+/*якщо зображення не буде - #2 */
+.example-3 .grid-block {
+    display: grid;
+    gap: 10px 20px;
+}
+
+.example-3 .grid-block img {
+    border: 3px solid #128cd0;
+    max-width: 100%;
+}
+
+.example-3 .grid-block:has(img) {
+    grid-template-columns: minmax(400px, 1fr) 1fr;
+}
+
+@media (max-width:767.98px) {
+    .example-3 .grid-block:has(img) {
+        grid-template-columns: auto;
+    }
+}
+
+
+
+/* ---- example-4 ---- */
+
+.example-4 .grid-box {
+    display: grid;
+    gap: 20px;
+
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*Не адаптивна конструкція*/
+
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /*Адаптивна конструкція з автоматичною иперебудовою колонок з min-width: 200px. Також auto-fill є більш доречним для карток з зображеннями */
+
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*З auto-fit колонки розтягуються і намагаються заповнити все вільне місце*/
+}
+
+.example-4 .grid-box .grid-item {
+    border: 3px solid #128cd0;
+    padding: 10px;
+}
+
+
+
+/* ---- example-5 ---- */
+.example-5 .grid-box {
+    display: grid;
+    gap: 20px;
+
+    /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    /*Адаптується для ширин екрану менших за 300рх*/
+}
+
+.example-5 .grid-box .grid-item {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+
+    border: 3px solid #128cd0;
+    padding: 15px;
+}
+
+@media (min-width: 665px) {
+    .example-5 .grid-box {
+        grid-auto-rows: 1fr;
+        /*Задаємо однакову висоту карток в залежності від наповнення + всі будуть рівнятися на більшу*/
+    }
+}
+
+.example-5 .grid-box .grid-item:has(img) {
+    grid-template-rows: auto 1fr auto;
+}
+
+.example-5 .grid-box .grid-item img {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 350 / 210;
+}
+
+.example-5 .grid-box .grid-item a {
+    color: #128cd0;
+    font-weight: 600;
+    transition: text-decoration 0.3s;
+}
+
+
+@media (any-hover: hover),
+(pointer: fine) {
+    .example-5 .grid-box .grid-item a:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+}
+
+
+
+
+
+/* ---- example-6 ---- */
+
+.example-6 .items {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+}
+
+.example-6 .grid-content {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+}
+
+.example-6 .grid-item {
+    border: 3px solid #128cd0;
+    padding: 10px;
+}
+
+.example-6 .grid-img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 565px) {
+    .example-6 .grid-content:nth-child(even) .grid-item:nth-child(1) {
+        order: 1;
+    }
+
+    .example-6 .grid-content:nth-child(even) .grid-item:nth-child(2) {
+        order: 0;
+    }
+}
+
+
+
+
+
+/* ---- example-7 ---- */
+
+.example-7 .grid-box {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.example-7 .grid-item {
+    border: 3px solid #128cd0;
+    padding: 10px;
+
+    grid-column: span 4;
+    /*span - Дозволяю  зайняти елементу 4-колонки*/
+}
+
+.example-7 .grid-item:nth-child(6n + 3),
+.example-7 .grid-item:nth-child(6n + 4) {
+    grid-column: span 7;
+    /*span - Дозволяю  зайняти елементу 7-колонок*/
+    background: #128cd0;
+}
+
+@media (max-width: 700px) {
+    .example-7 .grid-box {
+        grid-template-columns: repeat(14, 1fr);
+    }
+
+    .example-7 .grid-item {
+        grid-column: span 7;
+    }
+
+    .example-7 .grid-item:nth-child(6n + 3),
+    .example-7 .grid-item:nth-child(6n + 4) {
+        grid-column: span 14;
+    }
+}
+
+@media (max-width:600px) {
+    .example-7 .grid-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .example-7 .grid-item,
+    .example-7 .grid-item:nth-child(6n + 3),
+    .example-7 .grid-item:nth-child(6n + 4) {
+        grid-column: auto;
+    }
+}
+
+@media (max-width:450px) {
+    .example-7 .grid-box {
+        grid-template-columns: auto;
+    }
+}
+
+
+
+/* ---- example-8 ---- */
+
+.example-8 .grid-items {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*grid-template-rows: masonry; ця властивість поки не працює*/
+    grid-auto-rows: 50px;
+    /*це висота рядка*/
+}
+
+.example-8 .grid-item--middle {
+    grid-row: span 2;
+}
+
+.example-8 .grid-item--big {
+    grid-row: span 3;
+}
+
+.example-8 .grid-item--mega {
+    grid-row: span 4;
+}
+
+.example-8 .grid-item {
+    border: 3px solid #128cd0;
+    padding: 10px;
+}
+
+/* ============================================= */
+/* ============================================= */
+
+
+
+
+
+
+
+
+/* ----- Ecobazar ------ */
+#ecobazar .ecobazar__title {
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+#ecobazar .ecobazar__title p {
+    color: #00B207;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.28px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+#ecobazar .ecobazar__title h2 {
+    color: #1A1A1A;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+#ecobazar .product-cards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+    margin-bottom: 24px;
+}
+
+#ecobazar .product-card:not(:first-child) {
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+}
+
+#ecobazar .banner {
+    background-image: url(../img/ecobazar/banner_summer-sale.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid transparent;
+    padding: 24px;
+    text-align: center;
+    min-height: 335px;
+    transition: all 0.3s;
+}
+
+#ecobazar .banner__info h3 {
+    color: #1A1A1A;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0.36px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+#ecobazar .banner__info p {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+#ecobazar .product-card .banner__info p {
+    color: #00B207;
+}
+
+#ecobazar .banner__btn {
+    color: #00B207;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    padding: 14px 56px 14px 32px;
+    border-radius: 43px;
+    background: #FFF;
+
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+#ecobazar .banner__btn::before {
+    content: "";
+    position: absolute;
+    top: -35%;
+    left: -45%;
+    transform: skew(-50deg);
+    height: 160%;
+    width: 40%;
+    background-color: #fff;
+    background: linear-gradient(90deg, #00b2062b, #ffffff99);
+}
+
+#ecobazar .banner__btn::after {
+    content: '';
+    background: url(../img/icons/ecobazar__arrow-right.svg) center center / contain no-repeat;
+    width: 15px;
+    height: 12px;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+#ecobazar .action-block {
+    position: relative;
+}
+
+#ecobazar .action-block__buttons {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    top: 16px;
+    right: 16px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease-in-out,
+        visibility 0.3s ease-in-out;
+}
+
+#ecobazar .action-block__buttons button,
+#ecobazar .goods .active-buttons button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    padding: 10px;
+    background: #F2F2F2;
+
+    transition:
+        color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
+}
+
+#ecobazar .desired,
+#ecobazar .review {
+    /*<!-- ! для svg вказано замість коду кольору stroke="CurrentColor" тому воно буде успадковувати колір кнопки -->*/
+}
+
+#ecobazar .image-block {
+    text-align: center;
+}
+
+#ecobazar .image-block img {
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
+
+#ecobazar .info-block {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px 16px;
+}
+
+#ecobazar .info-block__contein {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+#ecobazar .name-product a {
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    transition: all 0.3s;
+}
+
+#ecobazar .price-product__current {
+    color: #1A1A1A;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#ecobazar .rating-product img {
+    max-width: 60px;
+    width: 100%;
+}
+
+#ecobazar .button-basket {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    padding: 10px;
+    background: #F2F2F2;
+
+    transition:
+        color 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
+}
+
+
+
+/* Goods */
+#ecobazar .goods {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(min(312px, 100%), 1fr));
+}
+
+#ecobazar .goods__column {
+    display: grid;
+    gap: 16px;
+}
+
+#ecobazar .goods__name {
+    color: #1A1A1A;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+#ecobazar .goods__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    border: 1px solid #E6E6E6;
+    padding: 5px;
+}
+
+#ecobazar .goods__item .img-block {
+    max-width: 32.7%;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+#ecobazar .goods__item .img-block img {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+}
+
+#ecobazar .goods__item .info-block {
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+#ecobazar .goods__item .info-block__contein {
+    width: 100%;
+}
+
+#ecobazar .goods__item .info-block .name-product {
+    width: 100%;
+    position: relative;
+}
+
+#ecobazar .goods__item .active-buttons {
+    position: absolute;
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    padding: 10px 0 0;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity 0.3s ease-in-out,
+        visibility 0.3s ease-in-out;
+}
+
+#ecobazar .goods .banner {
+    background-image: url(../img/ecobazar/banner_hot-sale.webp);
+    background-position-y: bottom;
+}
+
+#ecobazar .goods .banner__info p strong {
+    display: block
+}
+
+
+
+
+
+@media (any-hover: hover),
+(pointer: fine) {
+
+    #ecobazar .banner:hover,
+    #ecobazar .product-card:hover,
+    #ecobazar .goods__item:hover {
+        border: 1px solid #2C742F;
+        box-shadow: 0px 0px 12px 0px rgba(32, 181, 38, 0.32);
+    }
+
+    #ecobazar .banner__btn:hover {
+        border: 1px solid #00B207;
+    }
+
+    #ecobazar .banner__btn:hover::before {
+        translate: 500%;
+        transition: translate 1s;
+    }
+
+    #ecobazar .banner__btn:hover::after,
+    #blossomia .blossomia__open-more:hover::after {
+        animation: shake 0.8s ease-in-out infinite;
+    }
+
+    @keyframes shake {
+        25% {
+            transform: translateY(-50%) translateX(0);
+        }
+
+        50% {
+            transform: translateY(-50%) translateX(-5px);
+        }
+
+        75% {
+            transform: translateY(-50%) translateX(5px);
+        }
+    }
+
+    #ecobazar .action-block__buttons button:hover,
+    #ecobazar .goods .active-buttons button:hover {
+        color: #ffffff;
+        background-color: #00b207;
+    }
+
+    #ecobazar .product-card:hover .action-block__buttons,
+    #ecobazar .goods__item:hover .active-buttons {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #ecobazar .name-product a:hover {
+        color: #00b207;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    #ecobazar .product-card:hover .button-basket,
+    #ecobazar .goods__item:hover .button-basket {
+        color: #ffffff;
+        background-color: #00b207;
+    }
+
+    #ecobazar .product-card .button-basket:hover,
+    #ecobazar .goods .active-buttons .button-basket:hover {
+        background-color: #2C742F;
+    }
+}
+
+@media (max-width: 560px) {
+    #ecobazar .product-cards {
+        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    #ecobazar .banner {
+        background-position-y: center;
+    }
+}
+
+@media (max-width: 692px) {
+    #ecobazar .goods {
+        grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    }
+}
+
+/*===============================================*/
+
+
+
+
+
+/* ---- Blossomia ----- */
+#blossomia {
+    font-family: "KoPubBatang", sans-serif;
+    max-width: 1600px;
+    margin: 0 auto;
+    background: #F8F3EC;
+}
+
+.blossomia__container {
+    max-width: 1230px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.blossomia__items {
+    display: grid;
+    gap: 37px 30px;
+    grid-template-columns: 33.33% 1fr 1fr;
+}
+
+.blossomia__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.blossomia__item:nth-child(1) {
+    grid-row: span 3;
+}
+
+.blossomia__title {
+    color: #000;
+    font-size: 60px;
+    font-weight: 300;
+    line-height: 1;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-top: 52px;
+    margin-bottom: 78px;
+}
+
+.blossomia__item:nth-child(3) {
+    grid-row: span 4;
+}
+
+.blossomia__item:nth-child(4) {
+    grid-row: span 4;
+}
+
+.blossomia__item:nth-child(5) {
+    grid-row-start: 4;
+    grid-row-end: 8;
+}
+
+.blossomia__item:nth-child(6) {
+    grid-row: span 2;
+}
+
+.blossomia__item:nth-child(7) {
+    grid-row: span 2;
+}
+
+.blossomia__image {
+    overflow: hidden;
+}
+
+.blossomia__item .blossomia__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 370px / 380px;
+
+    transition: transform 0.3s;
+    will-change: transform;
+}
+
+.blossomia__item:nth-child(1) .blossomia__image img,
+.blossomia__item:nth-child(5) .blossomia__image img {
+    aspect-ratio: 400px / 430px;
+}
+
+.blossomia__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.blossomia__info h3 a {
+    transition: all 0.3s;
+}
+
+.blossomia__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.blossomia__buttons button {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    padding: 10px;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.blossomia__shopping-cart {
+    height: 42px;
+    padding: 10px 10px 10px 9px;
+}
+
+
+.blossomia__shopping-cart svg {
+    transform: rotateY(180deg);
+    width: 21px;
+    height: 23px;
+}
+
+.blossomia__price {
+    color: #4E4E4E;
+    font-family: "Carme", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.blossomia__item:nth-child(5) .blossomia__price {
+    flex-grow: 1;
+}
+
+.blossomia__open-more {
+    align-self: start;
+    background: #DBCCBA;
+    color: #2C2C2C;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 9px 63px 9px 30px;
+    outline: 1px solid #DBCCBA;
+    outline-offset: 10px;
+    margin-left: 10px;
+    margin-bottom: 20%;
+    position: relative;
+    transition: outline 0.3s;
+}
+
+.blossomia__open-more::after {
+    content: '';
+    background: url(../img/icons/blossomia__right-arrow.svg);
+    width: 23px;
+    height: 14px;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.button-open-more {
+    display: none;
+}
+
+@media (max-width: 1023.98px) {
+    .blossomia__item:nth-child(1) {
+        grid-row: span 2;
+    }
+
+    .blossomia__title {
+        font-size: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .blossomia__item:nth-child(3) {
+        grid-row: span 3;
+    }
+
+    .blossomia__item:nth-child(4) {
+        grid-row: span 3;
+    }
+
+    .blossomia__item:nth-child(5) {
+        grid-row-start: 3;
+        grid-row-end: 7;
+    }
+
+}
+
+@media (max-width: 881.98px) {
+    .blossomia--margin {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .blossomia__items {
+        gap: 50px;
+        grid-template-columns: repeat(auto-fill, minmax(min(270px, 100%), 1fr));
+    }
+
+    .blossomia__item {
+        gap: 10px;
+    }
+
+    .blossomia__item:nth-child(1) {
+        grid-row: unset;
+    }
+
+    .blossomia__title {
+        grid-column-start: unset;
+        grid-column-end: unset;
+        font-size: 50px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .blossomia__item:nth-child(3) {
+        grid-row: unset;
+    }
+
+    .blossomia__item:nth-child(4) {
+        grid-row: unset;
+    }
+
+    .blossomia__item:nth-child(5) {
+        grid-row-start: unset;
+        grid-row-end: unset;
+    }
+
+    .blossomia__item:nth-child(5) .blossomia__open-more {
+        display: none;
+    }
+
+    .blossomia__item:nth-child(6) {
+        grid-row: unset;
+    }
+
+    .blossomia__item:nth-child(7) {
+        grid-row: unset;
+    }
+
+    .blossomia__item img {
+        width: 100%;
+        object-fit: cover;
+        aspect-ratio: 1 / 1;
+    }
+
+    .button-open-more {
+        display: block;
+        justify-self: self-start;
+        align-self: self-end;
+    }
+}
+
+@media (max-width: 634.98px) {
+    .blossomia__title {
+        order: 1;
+        font-size: 34px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+    }
+
+    .blossomia__item {
+        order: 2;
+    }
+
+    .button-open-more {
+        order: 3;
+        margin-bottom: 0;
+    }
+}
+
+@media (any-hover: hover),
+(pointer: fine) {
+    .blossomia__info h3 a:hover {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+    }
+
+    .blossomia__item:hover img {
+        transform: scale(1.1);
+    }
+
+    .blossomia__buttons button:hover {
+        background: #999;
+        color: #fff;
+    }
+
+    .blossomia__buttons .blossomia__shopping-cart:hover svg {
+        fill: #fff;
+    }
+
+    .blossomia__open-more:hover {
+        outline: 1px solid #000;
+    }
+}
+
+
+
+
+
+
+/* ---- footer ---- */
+#footer {
+    margin-top: 100px;
+}
+
+
+
+
+
+
+
+/* ============================================= */

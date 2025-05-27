@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Lesson_17</title>
+
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" id="header">
+			<div class="header__container">
+				<ul class="header__list">
+					<li class="header__element"><a href="#practise">Practise</a></li>
+					<li class="header__element"><a href="#ecobazar">Ecobazar</a></li>
+					<li class="header__element"><a href="#blossomia">Blossomia</a></li>
+				</ul>
+			</div>
+		</header>
+
+		<main class="page">
+			<div class="page__block name-lesson name-lesson--margin">
+				<div class="name-lesson__container">
+					<h1>GRID module</h1>
+				</div>
+			</div>
+
+
+			<div class="page__block practise practise--margin" id="practise">
+				<div class="practise__contain">
+					<div class="example-1">
+						<!-- Конструкція виводу елементів контенту з довільним розміром -->
+						<h2 class="subtitile">Design for displaying content elements with the same size</h2>
+
+						<div class="grid-box">
+							<div class="grid-item">
+								1
+							</div>
+							<div class="grid-item">
+								2
+							</div>
+							<div class="grid-item">
+								3
+							</div>
+							<div class="grid-item">
+								4
+							</div>
+							<div class="grid-item">
+								5
+							</div>
+							<div class="grid-item">
+								6
+							</div>
+						</div>
+					</div>
+
+
+					<div class="example-2">
+						<!-- Конструкція виводу тексту з псевдоелементом -->
+						<h2 class="subtitile">Construction of text output with a pseudo-element</h2>
+
+						<div class="grid-block">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, recusandae nobis? Qui,
+								quod? Unde saepe ab quasi explicabo, eius asperiores praesentium magni soluta, rerum est
+								accusamus a consectetur repudiandae doloribus.
+							</p>
+						</div>
+
+						<div class="grid-block">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							</p>
+						</div>
+					</div>
+
+
+					<div class="example-3">
+						<!-- Конструкція виводу непостійних елементів різних розмірів -->
+						<h2 class="subtitile">Construction of text output with a pseudo-element</h2>
+
+						<div class="grid-block">
+							<img src="img/image_1.avif" alt="Image">
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, recusandae nobis? Qui,
+								quod? Unde saepe ab quasi explicabo, eius asperiores praesentium magni soluta, rerum est
+								accusamus a consectetur repudiandae doloribus.
+							</p>
+						</div>
+					</div>
+
+
+					<div class="example-4">
+						<!-- Конструкція виводу однакових елементів контенту -->
+						<h2 class="subtitile">Design of output of identical content elements</h2>
+
+						<div class="grid-box">
+							<div class="grid-item">
+								<p>one</p>
+							</div>
+							<div class="grid-item">
+								<p>two</p>
+							</div>
+							<div class="grid-item">
+								<span>three</span>
+							</div>
+							<div class="grid-item">
+								<p>four</p>
+							</div>
+							<div class="grid-item">
+								<p>five</p>
+							</div>
+							<div class="grid-item">
+								<p>six</p>
+							</div>
+							<div class="grid-item">
+								<p>seven </p>
+							</div>
+							<div class="grid-item">
+								<p>eight</p>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="example-5">
+						<div class="grid-box">
+							<div class="grid-item">
+								<img src="img/image_2.avif" alt="Image">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, soluta
+									similique! Earum ex quae laudantium cumque illo architecto corporis fugiat esse!
+									Veniam ex sapiente reprehenderit quod corrupti vero debitis similique.
+								</p>
+								<a href="#">Some link</a>
+							</div>
+
+							<div class="grid-item">
+								<img src="img/image_2.avif" alt="Image">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, soluta
+									similique! Earum ex quae laudantium cumque illo architecto corporis fugiat esse!
+									Veniam ex sapiente reprehenderit quod corrupti vero debitis similique.
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis provident modi
+									consequuntur tempora iste delectus dolorum sapiente dolores molestiae sint deleniti,
+									dolore labore veniam molestias asperiores praesentium in. Consectetur, quae?
+								</p>
+								<a href="#">Some link</a>
+							</div>
+
+							<div class="grid-item">
+								<img src="img/image_2.avif" alt="Image">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, soluta
+									similique! Earum ex quae laudantium cumque illo architecto corporis fugiat esse!
+									Veniam ex sapiente reprehenderit quod corrupti vero debitis similique.
+								</p>
+								<a href="#">Some link</a>
+							</div>
+
+							<div class="grid-item">
+								<img src="img/image_2.avif" alt="Image">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, soluta
+									similique! Earum ex quae laudantium cumque illo architecto corporis fugiat esse!
+									Veniam ex sapiente reprehenderit quod corrupti vero debitis similique.
+								</p>
+								<a href="#">Some link</a>
+							</div>
+
+							<div class="grid-item">
+								<img src="img/image_2.avif" alt="Image">
+								<p>
+									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident, soluta
+									similique! Earum ex quae laudantium cumque illo architecto corporis fugiat esse!
+									Veniam ex sapiente reprehenderit quod corrupti vero debitis similique.
+								</p>
+								<a href="#">Some link</a>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="example-6">
+						<!-- Конструкція виводу контенту у шаховому порядку-->
+						<h2 class="subtitile">Design of content output in a checkerboard pattern</h2>
+
+						<div class="items">
+							<div class="grid-content">
+								<p class="grid-item grid-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia cumque
+									praesentium nesciunt dolorem autem aperiam culpa quam, dolore animi et quidem atque
+									repudiandae alias odit. Libero, consectetur? Obcaecati, nulla.
+								</p>
+
+								<img class="grid-item grid-img" src="img/image_3.avif" alt="Image">
+							</div>
+
+
+							<div class="grid-content">
+								<p class="grid-item grid-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia cumque
+									praesentium nesciunt dolorem autem aperiam culpa quam, dolore animi et quidem atque
+									repudiandae alias odit. Libero, consectetur? Obcaecati, nulla.
+								</p>
+
+								<img class="grid-item grid-img" src="img/image_3.avif" alt="Image">
+							</div>
+
+
+							<div class="grid-content">
+								<p class="grid-item grid-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia cumque
+									praesentium nesciunt dolorem autem aperiam culpa quam, dolore animi et quidem atque
+									repudiandae alias odit. Libero, consectetur? Obcaecati, nulla.
+								</p>
+
+								<img class="grid-item grid-img" src="img/image_3.avif" alt="Image">
+							</div>
+
+
+							<div class="grid-content">
+								<p class="grid-item grid-text">
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quia cumque
+									praesentium nesciunt dolorem autem aperiam culpa quam, dolore animi et quidem atque
+									repudiandae alias odit. Libero, consectetur? Obcaecati, nulla.
+								</p>
+
+								<img class="grid-item grid-img" src="img/image_3.avif" alt="Image">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="example-7">
+						<!-- Конструкція виводу елементів згідно патерну-->
+						<h2 class="subtitile">Design of output elements according to the pattern</h2>
+
+						<div class="items">
+							<div class="grid-box">
+								<div class="grid-item">
+									<p>one</p>
+								</div>
+								<div class="grid-item">
+									<p>two</p>
+								</div>
+								<div class="grid-item">
+									<span>three</span>
+								</div>
+								<div class="grid-item">
+									<p>four</p>
+								</div>
+								<div class="grid-item">
+									<p>five</p>
+								</div>
+								<div class="grid-item">
+									<p>six</p>
+								</div>
+								<div class="grid-item">
+									<p>seven </p>
+								</div>
+								<div class="grid-item">
+									<p>eight</p>
+								</div>
+								<div class="grid-item">
+									<p>nine </p>
+								</div>
+								<div class="grid-item">
+									<p>ten</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="example-8">
+						<!-- Конструкція виводу елементів у стилі "Masonry"-->
+						<h2 class="subtitile">Design and selection of elements in the "Masonry" style</h2>
+
+						<div class="grid-items">
+							<div class="grid-item">one</div>
+							<div class="grid-item">two</div>
+							<span class="grid-item grid-item--middle">three</span>
+							<div class="grid-item grid-item--middle">four</div>
+							<div class="grid-item">five</div>
+							<div class="grid-item grid-item--big">six</div>
+							<div class="grid-item">seven</div>
+							<div class="grid-item grid-item--mega">eight</div>
+							<div class="grid-item grid-item--big">nine</div>
+							<div class="grid-item">ten</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Ecobazar -->
+			<div class="page__block ecobazar ecobazar--margin" id="ecobazar">
+				<div class="ecobazar__container">
+					<div class="ecobazar__title">
+						<p>Products</p>
+						<h2>Our Featured Products</h2>
+					</div>
+
+
+					<div class="ecobazar__cards product-cards">
+						<!-- product-card #1 -->
+						<div class="product-card banner">
+							<div class="banner__info">
+								<h3>Summer Sale</h3>
+								<p>75% off</p>
+								<button class="banner__btn">Shop Now</button>
+							</div>
+						</div>
+
+						<!-- product-card #2 -->
+						<div class="product-card">
+							<div class="action-block">
+								<div class="action-block__buttons">
+									<button class="desired" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="review" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+												stroke="CurrentColor" stroke-width="1.5" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+												stroke="CurrentColor" stroke-width="1.5" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="image-block">
+								<img src="img/ecobazar/products/chanise-cabbage.webp" alt="Chanise Cabbage">
+							</div>
+
+							<div class="info-block">
+								<div class="info-block__contein">
+									<h4 class="name-product">
+										<a href="#">Chanise Cabbage</a>
+									</h4>
+									<div class="price-product">
+										<span class="price-product__current"> $14.99</span>
+									</div>
+									<div class="rating-product">
+										<img src="img/ecobazar/rating-stars.png" alt="Stars">
+									</div>
+								</div>
+
+								<div class="info-block__change">
+									<button class="button-basket" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+												stroke="CurrentColor" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- product-card #3 -->
+						<div class="product-card">
+							<div class="action-block">
+								<div class="action-block__buttons">
+									<button class="desired" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="review" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+												stroke="CurrentColor" stroke-width="1.5" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+												stroke="CurrentColor" stroke-width="1.5" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="image-block">
+								<img src="img/ecobazar/products/green-lettuce.webp" alt="Green Lettuce">
+							</div>
+
+							<div class="info-block">
+								<div class="info-block__contein">
+									<h4 class="name-product">
+										<a href="#">Green Lettuce</a>
+									</h4>
+									<div class="price-product">
+										<span class="price-product__current"> $14.99</span>
+									</div>
+									<div class="rating-product">
+										<img src="img/ecobazar/rating-stars.png" alt="Stars">
+									</div>
+								</div>
+
+								<div class="info-block__change">
+									<button class="button-basket" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+												stroke="CurrentColor" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- product-card #4 -->
+						<div class="product-card">
+							<div class="action-block">
+								<div class="action-block__buttons">
+									<button class="desired" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="review" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+												stroke="CurrentColor" stroke-width="1.5" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+												stroke="CurrentColor" stroke-width="1.5" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="image-block">
+								<img src="img/ecobazar/products/green-chili.webp" alt="Green Chili">
+							</div>
+
+							<div class="info-block">
+								<div class="info-block__contein">
+									<h4 class="name-product">
+										<a href="#">Green Chili</a>
+									</h4>
+									<div class="price-product">
+										<span class="price-product__current"> $14.99</span>
+									</div>
+									<div class="rating-product">
+										<img src="img/ecobazar/rating-stars.png" alt="Stars">
+									</div>
+								</div>
+
+								<div class="info-block__change">
+									<button class="button-basket" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+												stroke="CurrentColor" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- product-card #5 -->
+						<div class="product-card">
+							<div class="action-block">
+								<div class="action-block__buttons">
+									<button class="desired" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="review" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+												stroke="CurrentColor" stroke-width="1.5" stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+												stroke="CurrentColor" stroke-width="1.5" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="image-block">
+								<img src="img/ecobazar/products/corn.webp" alt="Corn">
+							</div>
+
+							<div class="info-block">
+								<div class="info-block__contein">
+									<h4 class="name-product">
+										<a href="#">Corn</a>
+									</h4>
+									<div class="price-product">
+										<span class="price-product__current"> $14.99</span>
+									</div>
+									<div class="rating-product">
+										<img src="img/ecobazar/rating-stars.png" alt="Stars">
+									</div>
+								</div>
+
+								<div class="info-block__change">
+									<button class="button-basket" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+												stroke="CurrentColor" stroke-width="1.3" stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+					<div class="ecobazar__items goods">
+						<div class="goods__column">
+							<h3 class="goods__name"> Hot Deals </h3>
+
+							<!-- item #1 -->
+							<div class="goods__item">
+								<div class="img-block">
+									<img src="img/ecobazar/products/green-apple.webp" alt="Green apple">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__contein">
+										<h4 class="name-product">
+											<a href="#">Green Apple </a>
+											<div class="active-buttons">
+												<button class="button-basket" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+															stroke="CurrentColor" stroke-width="1.3"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+
+												<button class="desired" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+															stroke="CurrentColor" stroke-width="1.5" />
+													</svg>
+												</button>
+
+												<button class="review" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</h4>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+										</div>
+										<div class="rating-product">
+											<img src="img/ecobazar/rating-stars.png" alt="Stars">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #2 -->
+							<div class="goods__item">
+								<div class="img-block">
+									<img src="img/ecobazar/products/indian-malta.webp" alt="Indian Malta">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__contein">
+										<h4 class="name-product">
+											<a href="#">Indian Malta</a>
+											<div class="active-buttons">
+												<button class="button-basket" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+															stroke="CurrentColor" stroke-width="1.3"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+
+												<button class="desired" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+															stroke="CurrentColor" stroke-width="1.5" />
+													</svg>
+												</button>
+
+												<button class="review" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</h4>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+										</div>
+										<div class="rating-product">
+											<img src="img/ecobazar/rating-stars.png" alt="Stars">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #3 -->
+							<div class="goods__item">
+								<div class="img-block">
+									<img src="img/ecobazar/products/green-lettuce.webp" alt="Green apple">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__contein">
+										<h4 class="name-product">
+											<a href="#">Green Lettuce</a>
+											<div class="active-buttons">
+												<button class="button-basket" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+															stroke="CurrentColor" stroke-width="1.3"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+
+												<button class="desired" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+															stroke="CurrentColor" stroke-width="1.5" />
+													</svg>
+												</button>
+
+												<button class="review" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</h4>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+										</div>
+										<div class="rating-product">
+											<img src="img/ecobazar/rating-stars.png" alt="Stars">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="goods__column">
+							<h3 class="goods__name"> Best Seller </h3>
+
+							<!-- item #1 -->
+							<div class="goods__item">
+								<div class="img-block">
+									<img src="img/ecobazar/products/eggplant.webp" alt="Eggplant">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__contein">
+										<h4 class="name-product">
+											<a href="#">Eggplant</a>
+											<div class="active-buttons">
+												<button class="button-basket" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+															stroke="CurrentColor" stroke-width="1.3"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+
+												<button class="desired" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+															stroke="CurrentColor" stroke-width="1.5" />
+													</svg>
+												</button>
+
+												<button class="review" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</h4>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+										</div>
+										<div class="rating-product">
+											<img src="img/ecobazar/rating-stars.png" alt="Stars">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #2 -->
+							<div class="goods__item">
+								<div class="img-block">
+									<img src="img/ecobazar/products/green-capsicum.webp" alt="Green Capsicum">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__contein">
+										<h4 class="name-product">
+											<a href="#">Green Capsicum</a>
+											<div class="active-buttons">
+												<button class="button-basket" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+															stroke="CurrentColor" stroke-width="1.3"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+
+												<button class="desired" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+															stroke="CurrentColor" stroke-width="1.5" />
+													</svg>
+												</button>
+
+												<button class="review" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</h4>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+										</div>
+										<div class="rating-product">
+											<img src="img/ecobazar/rating-stars.png" alt="Stars">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #3 -->
+							<div class="goods__item">
+								<div class="img-block">
+									<img src="img/ecobazar/products/red-tomatos.webp" alt="Red Tomatos">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__contein">
+										<h4 class="name-product">
+											<a href="#">Red Tomatos</a>
+											<div class="active-buttons">
+												<button class="button-basket" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+															stroke="CurrentColor" stroke-width="1.3"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+
+												<button class="desired" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+															stroke="CurrentColor" stroke-width="1.5" />
+													</svg>
+												</button>
+
+												<button class="review" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</h4>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+										</div>
+										<div class="rating-product">
+											<img src="img/ecobazar/rating-stars.png" alt="Stars">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="goods__column">
+							<h3 class="goods__name">Top Rated </h3>
+
+							<!-- item #1 -->
+							<div class="goods__item">
+								<div class="img-block">
+									<img src="img/ecobazar/products/big-potatos.webp" alt="Green apple">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__contein">
+										<h4 class="name-product">
+											<a href="#">Big Potatos</a>
+											<div class="active-buttons">
+												<button class="button-basket" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+															stroke="CurrentColor" stroke-width="1.3"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+
+												<button class="desired" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+															stroke="CurrentColor" stroke-width="1.5" />
+													</svg>
+												</button>
+
+												<button class="review" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</h4>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+										</div>
+										<div class="rating-product">
+											<img src="img/ecobazar/rating-stars.png" alt="Stars">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #2 -->
+							<div class="goods__item">
+								<div class="img-block">
+									<img src="img/ecobazar/products/corn.webp" alt="Corn">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__contein">
+										<h4 class="name-product">
+											<a href="#">Corn</a>
+											<div class="active-buttons">
+												<button class="button-basket" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+															stroke="CurrentColor" stroke-width="1.3"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+
+												<button class="desired" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+															stroke="CurrentColor" stroke-width="1.5" />
+													</svg>
+												</button>
+
+												<button class="review" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</h4>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+										</div>
+										<div class="rating-product">
+											<img src="img/ecobazar/rating-stars.png" alt="Stars">
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- item #3 -->
+							<div class="goods__item">
+								<div class="img-block">
+									<img src="img/ecobazar/products/fresh-cauliflower.webp" alt="Fresh cauliflower">
+								</div>
+
+								<div class="info-block">
+									<div class="info-block__contein">
+										<h4 class="name-product">
+											<a href="#">Fresh cauliflower</a>
+											<div class="active-buttons">
+												<button class="button-basket" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M6.66667 8.33333H4.16667L2.5 17.5H17.5L15.8333 8.33333H13.3333M6.66667 8.33333V5.83334C6.66667 3.99239 8.15905 2.5 10 2.5V2.5C11.8409 2.5 13.3333 3.99238 13.3333 5.83333V8.33333M6.66667 8.33333H13.3333M6.66667 8.33333V10.8333M13.3333 8.33333V10.8333"
+															stroke="CurrentColor" stroke-width="1.3"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+
+												<button class="desired" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+															stroke="CurrentColor" stroke-width="1.5" />
+													</svg>
+												</button>
+
+												<button class="review" type="button">
+													<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M10 3.54105C3.75 3.54105 1.25 10.0001 1.25 10.0001C1.25 10.0001 3.75 16.4577 10 16.4577C16.25 16.4577 18.75 10.0001 18.75 10.0001C18.75 10.0001 16.25 3.54105 10 3.54105V3.54105Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+														<path
+															d="M10 13.125C10.8288 13.125 11.6237 12.7958 12.2097 12.2097C12.7958 11.6237 13.125 10.8288 13.125 10C13.125 9.1712 12.7958 8.37634 12.2097 7.79029C11.6237 7.20424 10.8288 6.875 10 6.875C9.1712 6.875 8.37634 7.20424 7.79029 7.79029C7.20424 8.37634 6.875 9.1712 6.875 10C6.875 10.8288 7.20424 11.6237 7.79029 12.2097C8.37634 12.7958 9.1712 13.125 10 13.125V13.125Z"
+															stroke="CurrentColor" stroke-width="1.5"
+															stroke-linecap="round" stroke-linejoin="round" />
+													</svg>
+												</button>
+											</div>
+										</h4>
+										<div class="price-product">
+											<span class="price-product__current"> $14.99</span>
+										</div>
+										<div class="rating-product">
+											<img src="img/ecobazar/rating-stars.png" alt="Stars">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="goods__column banner">
+							<div class="banner__info">
+								<h3>HOt Sale</h3>
+								<p> <strong>Save 37% </strong>on Every Order</p>
+								<button class="banner__btn">Shop Now</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+			<!-- Blossomia -->
+			<div class="page__block blossomia blossomia--margin" id="blossomia">
+				<div class="blossomia__container">
+					<div class="blossomia__items">
+						<!-- item #1 -->
+						<div class="blossomia__item">
+							<a class="blossomia__image" href="#">
+								<img src="img/blossomia/enchanted-petals.webp" alt="Enchanted Petals">
+							</a>
+
+							<div class="blossomia__info">
+								<h3><a href="#">Enchanted Petals</a></h3>
+								<div class="blossomia__buttons">
+									<button class="blossomia__like" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="blossomia__shopping-cart" type="button">
+										<svg width="20px" height="20px" viewBox="0 0 902.86 902.86" fill="#000000"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z  M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z" />
+											<path
+												d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="blossomia__price">
+								<p>70 Euro</p>
+							</div>
+						</div>
+
+						<!-- item #2 -->
+						<div class="blossomia__title">
+							<h2>Catalog of Floral Delights for Every Occasion</h2>
+						</div>
+
+						<!-- item #3 -->
+						<div class="blossomia__item">
+							<a class="blossomia__image" href="#">
+								<img src="img/blossomia/whispering-meadows.webp" alt="Whispering Meadows">
+							</a>
+
+							<div class="blossomia__info">
+								<h3><a href="#">Enchanted Petals</a></h3>
+								<div class="blossomia__buttons">
+									<button class="blossomia__like" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="blossomia__shopping-cart" type="button">
+										<svg width="20px" height="20px" viewBox="0 0 902.86 902.86" fill="#000000"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z  M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z" />
+											<path
+												d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="blossomia__price">
+								<p>45 Euro</p>
+							</div>
+						</div>
+
+						<!-- item #4 -->
+						<div class="blossomia__item">
+							<a class="blossomia__image" href="#">
+								<img src="img/blossomia/serene-bliss.webp" alt="Serene Bliss">
+							</a>
+
+							<div class="blossomia__info">
+								<h3><a href="#">Enchanted Petals</a></h3>
+								<div class="blossomia__buttons">
+									<button class="blossomia__like" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="blossomia__shopping-cart" type="button">
+										<svg width="20px" height="20px" viewBox="0 0 902.86 902.86" fill="#000000"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z  M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z" />
+											<path
+												d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="blossomia__price">
+								<p>60 Euro</p>
+							</div>
+						</div>
+
+						<!-- item #5 -->
+						<div class="blossomia__item">
+							<a class="blossomia__image" href="#">
+								<img src="img/blossomia/floral-harmony.webp" alt="Floral Harmony">
+							</a>
+
+							<div class="blossomia__info">
+								<h3><a href="#">Enchanted Petals</a></h3>
+								<div class="blossomia__buttons">
+									<button class="blossomia__like" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="blossomia__shopping-cart" type="button">
+										<svg width="20px" height="20px" viewBox="0 0 902.86 902.86" fill="#000000"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z  M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z" />
+											<path
+												d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="blossomia__price">
+								<p>80 Euro</p>
+							</div>
+
+							<button class="blossomia__open-more" type="button">Open More</button>
+						</div>
+
+						<!-- item #6 -->
+						<div class="blossomia__item">
+							<a class="blossomia__image" href="#">
+								<img src="img/blossomia/springtime-serenade.webp" alt="Springtime Serenade">
+							</a>
+
+							<div class="blossomia__info">
+								<h3><a href="#">Enchanted Petals</a></h3>
+								<div class="blossomia__buttons">
+									<button class="blossomia__like" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="blossomia__shopping-cart" type="button">
+										<svg width="20px" height="20px" viewBox="0 0 902.86 902.86" fill="#000000"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z  M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z" />
+											<path
+												d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="blossomia__price">
+								<p>65 Euro</p>
+							</div>
+						</div>
+
+						<!-- item #7 -->
+						<div class="blossomia__item">
+							<a class="blossomia__image" href="#">
+								<img src="img/blossomia/blooming-splendor.webp" alt="Blooming Splendor">
+							</a>
+
+							<div class="blossomia__info">
+								<h3><a href="#">Enchanted Petals</a></h3>
+								<div class="blossomia__buttons">
+									<button class="blossomia__like" type="button">
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M9.9996 17.5451C-6.66672 8.33333 4.99993 -1.66667 9.9996 4.65671C14.9999 -1.66667 26.6666 8.33333 9.9996 17.5451Z"
+												stroke="CurrentColor" stroke-width="1.5" />
+										</svg>
+									</button>
+									<button class="blossomia__shopping-cart" type="button">
+										<svg width="20px" height="20px" viewBox="0 0 902.86 902.86" fill="#000000"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z  M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z" />
+											<path
+												d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z" />
+										</svg>
+									</button>
+								</div>
+							</div>
+
+							<div class="blossomia__price">
+								<p>50 Euro</p>
+							</div>
+						</div>
+
+						<button class="blossomia__open-more button-open-more" type="button">Open More</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+
+
+
+		<footer class="footer" id="footer">
+			<div class="footer__container">
+				<a class="footer__link" href="#header">2025 - Made by Bartash Ksenia</a>
+			</div>
+		</footer>
+	</div>
+
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
