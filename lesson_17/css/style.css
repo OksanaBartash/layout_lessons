@@ -443,8 +443,12 @@ body {
 }
 
 #ecobazar .product-card:not(:first-child) {
+    position: relative;
     border: 1px solid #E6E6E6;
     background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 #ecobazar .banner {
@@ -515,10 +519,6 @@ body {
     top: 50%;
     transform: translateY(-50%);
     position: absolute;
-}
-
-#ecobazar .action-block {
-    position: relative;
 }
 
 #ecobazar .action-block__buttons {
@@ -775,7 +775,11 @@ body {
         background-color: #2C742F;
     }
 }
-
+@media (max-width: 692px) {
+    #ecobazar .goods {
+        grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+    }
+}
 @media (max-width: 560px) {
     #ecobazar .product-cards {
         gap: 10px;
@@ -786,12 +790,12 @@ body {
         background-position-y: center;
     }
 }
-
-@media (max-width: 692px) {
-    #ecobazar .goods {
-        grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+@media (max-width: 414.98px) {
+    #ecobazar .banner {
+        min-height: 400px;
     }
 }
+
 
 /*===============================================*/
 
@@ -809,8 +813,8 @@ body {
 
 .blossomia__container {
     max-width: 1230px;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .blossomia__items {
@@ -863,20 +867,20 @@ body {
 
 .blossomia__image {
     overflow: hidden;
+    aspect-ratio: 370px / 380px;
 }
 
 .blossomia__item .blossomia__image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    aspect-ratio: 370px / 380px;
 
     transition: transform 0.3s;
     will-change: transform;
 }
 
-.blossomia__item:nth-child(1) .blossomia__image img,
-.blossomia__item:nth-child(5) .blossomia__image img {
+.blossomia__item:nth-child(1) .blossomia__image,
+.blossomia__item:nth-child(5) .blossomia__image {
     aspect-ratio: 400px / 430px;
 }
 
@@ -989,11 +993,6 @@ body {
 }
 
 @media (max-width: 881.98px) {
-    .blossomia--margin {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-
     .blossomia__items {
         gap: 50px;
         grid-template-columns: repeat(auto-fill, minmax(min(270px, 100%), 1fr));
@@ -1095,21 +1094,4 @@ body {
         outline: 1px solid #000;
     }
 }
-
-
-
-
-
-
-/* ---- footer ---- */
-#footer {
-    margin-top: 100px;
-}
-
-
-
-
-
-
-
 /* ============================================= */
