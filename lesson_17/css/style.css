@@ -867,7 +867,7 @@ body {
 
 .blossomia__image {
     overflow: hidden;
-    aspect-ratio: 370px / 380px;
+    aspect-ratio: 370 / 380;
 }
 
 .blossomia__item .blossomia__image img {
@@ -881,7 +881,7 @@ body {
 
 .blossomia__item:nth-child(1) .blossomia__image,
 .blossomia__item:nth-child(5) .blossomia__image {
-    aspect-ratio: 400px / 430px;
+    aspect-ratio: 400 / 430;
 }
 
 .blossomia__info {
