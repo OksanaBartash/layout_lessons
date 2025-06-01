@@ -33,11 +33,17 @@ body {
 
 h2 {
     font-size: calc(23px + (36 - 23) * ((100vw - 320px) / (1440 - 320)));
+    font-weight: 700;
+    color: #32b5a4;
+}
+
+h3 {
+    font-size: calc(20px + (30 - 20) * ((100vw - 320px) / (1440 - 320)));
     font-weight: 500;
     font-style: italic;
 }
 
-h2 span {
+h3 span {
     font-style: normal;
 }
 
@@ -48,6 +54,10 @@ h2 span {
 
     h2 {
         font-size: 36px;
+    }
+
+    h3 {
+        font-size: 30px;
     }
 }
 
@@ -352,7 +362,7 @@ h2 span {
     margin-bottom: 50px;
 }
 
-.students-life__container article h2 {
+.students-life__container article h3 {
     margin-bottom: 20px;
 }
 
