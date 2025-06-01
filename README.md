@@ -31,3 +31,5 @@ Lesson_15: https://oksanabartash.github.io/layout_lessons/lesson_15/
 Lesson_16: https://oksanabartash.github.io/layout_lessons/lesson_16/
 
 Lesson_17: https://oksanabartash.github.io/layout_lessons/lesson_17/
+
+Lesson_18: https://oksanabartash.github.io/layout_lessons/lesson_18/
