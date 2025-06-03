@@ -454,15 +454,34 @@ body {
 }
 
 #ecobazar .banner {
-    background-image: url(../img/ecobazar/banner_summer-sale.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     border: 1px solid transparent;
-    padding: 24px;
+
     text-align: center;
     min-height: 335px;
     transition: all 0.3s;
+
+    position: relative;
+}
+
+#ecobazar .banner .banner__img {
+    width: 100%;
+    height: 100%;
+}
+
+#ecobazar .banner .banner__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#ecobazar .banner__info {
+    position: absolute;
+    padding: 24px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
 
 #ecobazar .banner__info h3 {
@@ -493,7 +512,8 @@ body {
     line-height: 1.2;
     padding: 14px 56px 14px 32px;
     border-radius: 43px;
-    background: #FFF;
+    border: 1px solid #ffffff;
+    background: #ffffff;
 
     position: relative;
     overflow: hidden;
@@ -559,15 +579,15 @@ body {
 }
 
 #ecobazar .image-block {
-    text-align: center;
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 #ecobazar .image-block img {
-    text-align: center;
     padding: 1px;
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    aspect-ratio: 1 / 1;
 }
 
 #ecobazar .info-block {
@@ -653,12 +673,12 @@ body {
     width: 100%;
     flex-grow: 1;
     flex-shrink: 1;
+    aspect-ratio: 102 / 102;
 }
 
 #ecobazar .goods__item .img-block img {
     width: 100%;
     object-fit: contain;
-    aspect-ratio: 1 / 1;
 }
 
 #ecobazar .goods__item .info-block {
@@ -695,11 +715,6 @@ body {
     transition:
         opacity 0.3s ease-in-out,
         visibility 0.3s ease-in-out;
-}
-
-#ecobazar .goods .banner {
-    background-image: url(../img/ecobazar/banner_hot-sale.webp);
-    background-position-y: bottom;
 }
 
 #ecobazar .goods .banner__info p strong {
@@ -778,9 +793,45 @@ body {
     }
 }
 
+@media (any-hover: none),
+(pointer: coarse) {
+
+    #ecobazar .product-card .action-block__buttons,
+    #ecobazar .goods__item .active-buttons {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #ecobazar .goods__item {
+        position: relative;
+        padding: 15px 5px;
+    }
+
+    #ecobazar .goods__item .info-block__contein {
+        width: calc(100% - 25%);
+    }
+
+    #ecobazar .goods__item .info-block .name-product {
+        position: unset;
+    }
+
+    #ecobazar .goods__item .active-buttons {
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        flex-wrap: nowrap;
+        height: 100%;
+        gap: 3px;
+        width: 15%;
+        top: 0;
+        left: calc(100% - 15%);
+        padding: 2px 5px 2px 2px;
+    }
+}
+
 @media (max-width: 692px) {
     #ecobazar .goods {
-        grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(min(245px, 100%), 1fr));
     }
 }
 
@@ -833,10 +884,6 @@ body {
     gap: 15px;
 }
 
-.blossomia__item:nth-child(1) {
-    grid-row: span 3;
-}
-
 .blossomia__title {
     color: #000;
     font-size: 60px;
@@ -846,27 +893,38 @@ body {
     grid-column-end: 4;
     margin-top: 52px;
     margin-bottom: 78px;
+    order: 2;
+}
+
+.blossomia__item:nth-child(2) {
+    grid-row: span 3;
+    order: 1;
 }
 
 .blossomia__item:nth-child(3) {
     grid-row: span 4;
+    order: 3;
 }
 
 .blossomia__item:nth-child(4) {
     grid-row: span 4;
+    order: 4;
 }
 
 .blossomia__item:nth-child(5) {
     grid-row-start: 4;
     grid-row-end: 8;
+    order: 5;
 }
 
 .blossomia__item:nth-child(6) {
     grid-row: span 2;
+    order: 7;
 }
 
 .blossomia__item:nth-child(7) {
     grid-row: span 2;
+    order: 8;
 }
 
 .blossomia__image {
@@ -964,6 +1022,7 @@ body {
 }
 
 .blossomia__open-more {
+    width: fit-content;
     align-self: start;
     background: #DBCCBA;
     color: #2C2C2C;
@@ -973,9 +1032,10 @@ body {
     outline: 1px solid #DBCCBA;
     outline-offset: 10px;
     margin-left: 10px;
-    margin-bottom: 20%;
+    margin-top: -42%;
     position: relative;
     transition: outline 0.3s;
+    order: 9;
 }
 
 .blossomia__open-more::after {
@@ -989,12 +1049,8 @@ body {
     position: absolute;
 }
 
-.button-open-more {
-    display: none;
-}
-
 @media (max-width: 1023.98px) {
-    .blossomia__item:nth-child(1) {
+    .blossomia__item:nth-child(2) {
         grid-row: span 2;
     }
 
@@ -1029,7 +1085,7 @@ body {
         gap: 10px;
     }
 
-    .blossomia__item:nth-child(1) {
+    .blossomia__item:nth-child(2) {
         grid-row: unset;
     }
 
@@ -1072,10 +1128,12 @@ body {
         aspect-ratio: 1 / 1;
     }
 
-    .button-open-more {
+    .blossomia__open-more {
         display: block;
         justify-self: self-start;
-        align-self: self-end;
+        align-self: end;
+        margin-top: 0;
+        margin-bottom: 10%;
     }
 }
 
@@ -1091,8 +1149,7 @@ body {
         order: 2;
     }
 
-    .button-open-more {
-        order: 3;
+    .blossomia__open-more {
         margin-bottom: 0;
     }
 }
