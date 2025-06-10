@@ -24,13 +24,13 @@ html {
 body {
     font-family: "Marcellus", serif;
     color: var(--colorLight);
-    background: var(--colorCleanLight);
+    background-color: var(--colorCleanLight);
     user-select: none;
 }
 
 @media (prefers-color-scheme: dark) {
     body {
-        background: var(--colorDark);
+        background-color: var(--colorDark);
     }
 }
 
@@ -67,7 +67,7 @@ body {
 }
 
 #header {
-    background: var(--backgroundHeaderFooter);
+    background-color: var(--backgroundHeaderFooter);
     color: var(--colorCleanLight);
     font-size: 1.5rem;
     line-height: 1.3;
@@ -123,7 +123,7 @@ body {
         width: 100%;
         height: 0.125rem;
         right: 0;
-        background: var(--colorCleanLight);
+        background-color: var(--colorCleanLight);
         transition: all 0.3s;
     }
 
@@ -159,7 +159,7 @@ body {
         position: fixed;
         overflow: hidden;
         height: calc(100%);
-        background: var(--backgroundStory);
+        background-color: var(--backgroundStory);
         width: 100%;
         top: 0;
         right: -100%;
@@ -229,7 +229,7 @@ body {
     align-items: start;
     gap: 1.875rem;
     text-align: start;
-    background: var(--backgroundHeroText);
+    background-color: var(--backgroundHeroText);
     padding: 1.2em 2em;
     margin: 0 -0.9375em;
 
@@ -301,7 +301,7 @@ body {
     animation-delay: 1.5s;
     transform: translateX(200vw);
 
-    background: var(--backgroundGallaryItem);
+    background-color: var(--backgroundGallaryItem);
     padding: 1rem;
     border-radius: 0.5rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
@@ -364,7 +364,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
     .gallary__item {
-        background: var(--backgroundHeaderFooter);
+        background-color: var(--backgroundHeaderFooter);
         color: var(--colorCleanLight);
     }
 }
@@ -382,7 +382,7 @@ body {
     font-size: clamp(1rem, 0.965rem + 0.17vw, 1.125rem);
     /*16>18 & 1470>320*/
     line-height: 1.2;
-    background: var(--backgroundStory);
+    background-color: var(--backgroundStory);
     padding: 1.25rem 0;
 }
 
@@ -507,7 +507,7 @@ body {
 
 /* --- footer --- */
 #footer {
-    background: var(--backgroundHeaderFooter);
+    background-color: var(--backgroundHeaderFooter);
     padding: 1.875rem 0;
     font-size: 1.25rem;
 }
