@@ -8,6 +8,7 @@
 body {
     font-family: "Montserrat", sans-serif;
     color: #000000;
+    background-color: #f4ddcf;
 }
 
 .wrapper {
@@ -29,7 +30,9 @@ body {
     padding-right: 15px;
 }
 
-
+[class*=--margin] {
+    margin-bottom: 40px;
+}
 
 /* ========================================= */
 /* ---- header ---- */
@@ -253,7 +256,7 @@ body {
         align-items: start;
         gap: 20px;
 
-        background: #fbe3cda2;
+        background: #fbe3cdf2;
         padding: 30px 15px;
 
         transition: all 0.5s;
@@ -264,7 +267,8 @@ body {
     }
 
     body.menu-open-2 {
-        overflow: hidden; /* Прибираю скрол з body при відкритому меню */
+        overflow: hidden;
+        /* Прибираю скрол з body при відкритому меню */
     }
 
     .business-header__list {
@@ -293,7 +297,7 @@ body {
 .intro {
     background: url(../img/image.webp) center no-repeat;
     background-size: cover;
-    min-height: calc(100vh - 116px);
+    min-height: 100vh;
 }
 
 .intro__container {
@@ -323,10 +327,25 @@ body {
     }
 }
 
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+[class*=__text] p {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+
+
 /* -- footer -- */
 #footer {
     background: #030204;
     color: #F26522;
+    margin-top: 40px;
 }
 
 .footer__container {
